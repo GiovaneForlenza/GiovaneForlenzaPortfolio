@@ -27,7 +27,7 @@ function NavBar() {
         })}
       </ul>
       <div
-        className="inline-block cursor-pointer p-2 mr-2 z-10 text-gray-500  hover:text-white duration-200 lg:hidden"
+        className="lg:hidden inline-block cursor-pointer p-2 mr-2 z-10 text-gray-500  hover:text-white duration-200"
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         {isNavOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
