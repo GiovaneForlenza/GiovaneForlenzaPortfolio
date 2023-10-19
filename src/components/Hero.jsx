@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 function Hero() {
   return (
-    <div className="w-full flex flex-col items-center justify-center h-full bg-gradient-to-b from-black via-black to-gray-800 px-3 sm:px-10 md:flex-row">
+    <div className="       sm:px-10 md:flex-row w-full flex flex-col items-center justify-center h-full bg-gradient-to-b from-black via-black to-gray-800 px-3 ">
       <div className="flex flex-col justify-center max-w-4xl">
         <h2 className="text-5xl sm:text-7xl font-bold">
           I'm a Front End Developer
@@ -27,4 +27,4 @@ function Hero() {
   );
 }
 
-export default Hero
+export default Hero;
