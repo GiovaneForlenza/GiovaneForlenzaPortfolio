@@ -6,11 +6,13 @@ function NavBar() {
   const links = ["Home", "About", "Portfolio", "Experience", "Contact"];
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black px-4">
-      <div className="">
-        <h1 className="text-4xl ml-2 font-signature md:text-5xl">
-          Giovane Forlenza
-        </h1>
+    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black px-4 select-none">
+      <div className="p-2 cursor-pointer">
+        <a href="#">
+          <h1 className="text-4xl ml-2 font-signature md:text-5xl">
+            Giovane Forlenza
+          </h1>
+        </a>
       </div>
       <ul className="hidden lg:flex">
         {links.map((link, id) => {
@@ -35,7 +37,7 @@ function NavBar() {
           {links.map((link, id) => {
             return (
               <li
-                className="px-4 cursor-pointer capitalize py-6 text-4xl duration-200 hover:text-white "
+                className=" px-4 cursor-pointer capitalize py-6 text-4xl duration-200 hover:text-white "
                 key={id}
               >
                 {link}

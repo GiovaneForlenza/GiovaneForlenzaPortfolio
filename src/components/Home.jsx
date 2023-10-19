@@ -1,10 +1,14 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import About from "./About";
+import Hero from "./Hero";
+import Portfolio from "./Portfolio";
 
 function Home() {
   return (
-    <div>
-      <img src={HeroImage} alt="" />
+    <div name="home" className="h-screen w-full  text-white ">
+      <Hero />
+      <About />
+      <Portfolio />
     </div>
   );
 }
