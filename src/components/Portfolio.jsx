@@ -45,7 +45,7 @@ function Portfolio() {
   ];
   return (
     <div
-      className="w-full px-3 py-8 flex items-center bg-gradient-to-b  from-black to-gray-800  text-white sm:px-10"
+      className="w-full px-3 py-8 flex items-center bg-gradient-to-b from-black to-gray-800  text-white sm:px-10 "
       name="portfolio"
     >
       <div className="max-w-6xl mx-auto">
@@ -56,31 +56,34 @@ function Portfolio() {
           <p className="text-xl my-8 ">Check out some of my work right here</p>
         </div>
         <div className="grid gap-8 px-8 md:grid-cols-2 sm:px-0 ">
+          
           {projects.map((project, id) => {
             return (
               <div
-                className="max-w-lg rounded overflow-hidden shadow-lg bg-white"
+                className="max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-600"
                 key={id}
               >
-                <img src={project.photo} alt="" className="" />
+                <img src={project.photo} alt="" className="rounded-t-lg" />
 
                 <div className="px-4 py-4">
-                  <div className="font-bold text-xl mb-1 text-black">
+                  <div className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {project.title}
                   </div>
                   <div className="">
                     {project.tags.map((tag, id) => {
                       return (
-                        <span
-                          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2"
+                        <div
+                          className="inline-block rounded-full  text-xs font-semibold mr-2 mb-2 p-[2px] dark:text-white bg-gradient-to-r from-blue-800 to-indigo-900"
                           key={id}
                         >
-                          {tag}
-                        </span>
+                          <div className="h-full w-full py-1 px-4 rounded-full bg-gray-900">
+                            {tag}
+                          </div>
+                        </div>
                       );
                     })}
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Voluptatibus quia, nulla! Maiores et perferendis eaque,
                     exercitationem praesentium nihil.
@@ -95,13 +98,13 @@ function Portfolio() {
                     </a>
                     <a
                       href="#"
-                      className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-md hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 duration-300"
+                      className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
                     >
                       View Code
                     </a>
                     <button
                       type="button"
-                      className="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                      className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
                     >
                       Project Info
                     </button>

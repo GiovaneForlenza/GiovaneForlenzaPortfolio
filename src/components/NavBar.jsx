@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import NavBarLinks from "./NavBarLinks";
 
 function NavBar() {
   const links = ["Home", "About", "Portfolio", "Experience", "Contact"];
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black px-4 select-none">
+    <div className="flex justify-between items-center w-full text-white fixed bg-black px-4 select-none">
       <div className="p-2 cursor-pointer">
         <a href="#">
-          <h1 className="text-4xl ml-2 font-signature md:text-5xl">
+          <h1 className="text-4xl ml-2 font-signature md:text-7xl">
             Giovane Forlenza
           </h1>
         </a>

@@ -5,6 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       signature: ["Great Vibes"],
+      code:["Inconsolata"]
     },
     screens: {
       xs: "475px",
