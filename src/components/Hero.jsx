@@ -3,7 +3,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 function Hero() {
   return (
-    <div className="sm:px-10 md:flex-row md:w-full flex flex-col items-center justify-center h-full bg-gradient-to-b from-bg-dark  to-secondary px-3">
+    <div className="sm:px-10 md:flex-row md:w-full flex flex-col items-center justify-center h-full bg-gradient-to-b dark:from-bg-dark  dark:to-secondary px-3">
       <div className="flex flex-col justify-center max-w-4xl">
         <h2 className="text-5xl sm:text-7xl font-bold font-code">
           I'm a{" "}
