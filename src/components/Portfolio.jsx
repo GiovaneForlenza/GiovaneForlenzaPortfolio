@@ -42,21 +42,27 @@ function Portfolio() {
       link: "https://react-project-cocktaildb.netlify.app",
       photo: cocktail,
     },
+    {
+      title: "PLACEHOLDER",
+      tags: ["React", "Scss", "API"],
+      description: "",
+      link: "https://react-project-cocktaildb.netlify.app",
+      photo: cocktail,
+    },
   ];
   return (
     <div
-      className="w-full px-3 py-8 flex items-center bg-gradient-to-b from-black to-gray-800  text-white sm:px-10 "
+      className="w-full px-3 py-8 flex items-center bg-gradient-to-b from-bg-dark  to-secondary  text-text sm:px-10 "
       name="portfolio"
     >
       <div className="max-w-6xl mx-auto">
         <div className="pb-2">
-          <p className="text-4xl font-bold inline border-b-4 border-b-gray-500">
+          <p className=" text-4xl font-bold inline border-b-4 border-b-accent">
             Portfolio
           </p>
           <p className="text-xl my-8 ">Check out some of my work right here</p>
         </div>
         <div className="grid gap-8 px-8 md:grid-cols-2 sm:px-0 ">
-          
           {projects.map((project, id) => {
             return (
               <div
@@ -73,12 +79,10 @@ function Portfolio() {
                     {project.tags.map((tag, id) => {
                       return (
                         <div
-                          className="inline-block rounded-full  text-xs font-semibold mr-2 mb-2 p-[2px] dark:text-white bg-gradient-to-r from-blue-800 to-indigo-900"
+                          className="inline-block rounded-full  text-xs font-semibold px-4 py-1 mr-2 mb-2 p-[2px] dark:text-white border-[3px] border-primary"
                           key={id}
                         >
-                          <div className="h-full w-full py-1 px-4 rounded-full bg-gray-900">
-                            {tag}
-                          </div>
+                          {tag}
                         </div>
                       );
                     })}
@@ -89,25 +93,33 @@ function Portfolio() {
                     exercitationem praesentium nihil.
                   </p>
                   <div className="flex mt-4 flex-col xs:flex-row md:mt-6">
-                    <a
+                    {/* <a
                       href={project.link}
                       target="_blank"
                       className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-white bg-blue-700 duration-300 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
                       View Live
-                    </a>
+                    </a> */}
                     <a
-                      href="#"
-                      className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+                      href={project.link}
+                      target="_blank"
+                      className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-secondary bg-accent duration-300 rounded-md md:hover:-translate-y-1 md:hover:shadow-md md:hover:shadow-accent  focus:outline-none  "
                     >
-                      View Code
+                      View Live
                     </a>
-                    <button
-                      type="button"
-                      className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >
-                      Project Info
-                    </button>
+                    {[
+                      { text: "View code", href: "#" },
+                      { text: "Project Info", href: "#" },
+                    ].map((btn) => {
+                      return (
+                        <a
+                          href={btn.href}
+                          className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-6 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+                        >
+                          {btn.text}
+                        </a>
+                      );
+                    })}
                   </div>
                 </div>
               </div>

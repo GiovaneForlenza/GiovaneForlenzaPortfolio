@@ -5,7 +5,7 @@ function NavBar() {
   const links = ["Home", "About", "Portfolio", "Experience", "Contact"];
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex justify-between items-center w-full text-white fixed bg-black px-4 select-none">
+    <div className="flex justify-between items-center w-full text-white fixed bg-secondary border-b border-primary px-4 py-2 select-none">
       <div className="p-2 cursor-pointer">
         <a href="#">
           <h1 className="text-4xl ml-2 font-signature md:text-7xl">
@@ -17,7 +17,7 @@ function NavBar() {
         {links.map((link, id) => {
           return (
             <li
-              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 mx-2 hover:text-white"
+              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 mx-2 hover:text-accent"
               key={id}
             >
               {link}
@@ -26,7 +26,7 @@ function NavBar() {
         })}
       </ul>
       <div
-        className="lg:hidden inline-block cursor-pointer p-2 mr-2 z-10 text-gray-500  hover:text-white duration-200"
+        className="lg:hidden inline-block cursor-pointer p-2 mr-2 z-10 text-gray-500  hover:text-accent duration-200"
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         {isNavOpen ? <FaTimes size={25} /> : <FaBars size={25} />}

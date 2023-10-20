@@ -16,7 +16,7 @@ function SocialLinks() {
         {links.map((link, id) => {
           return (
             <li
-              className="flex justify-between items-center w-40 h-14 px-4  bg-gradient-to-l from-cyan-700 to-blue-500 ml-[-100px] text-lg duration-700 font-semibold  cursor-pointer first:rounded-tr-md last:rounded-br-md hover:rounded-r-md hover:ml-0"
+              className="flex justify-between items-center w-40 h-14 px-4 bg-gradient-to-r from-accent to-primary text-text ml-[-100px] text-lg duration-700 font-semibold  cursor-pointer first:rounded-tr-md last:rounded-br-md hover:rounded-r-md hover:ml-0"
               key={id}
             >
               <a
