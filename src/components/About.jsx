@@ -3,12 +3,12 @@ import React from "react";
 function About() {
   return (
     <div
-      className="md:w-full px-3 md:h-screen flex items-center bg-gradient-to-t from-bg-dark  to-secondary text-text sm:px-10"
+      className="md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-gradient-to-t dark:from-bg-dark  dark:to-secondary-dark sm:px-10"
       name="about"
     >
       <div className="max-w-4xl mx-auto ">
         <div className="pb-2 ">
-          <p className="text-white text-4xl font-bold inline border-b-4 border-b-accent">
+          <p className="text-text-light text-4xl font-bold inline border-b-4 border-b-accent-light">
             About Me
           </p>
         </div>

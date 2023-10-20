@@ -5,7 +5,10 @@ import Portfolio from "./Portfolio";
 
 function Home() {
   return (
-    <div name="home" className="h-screen w-full text-white ">
+    <div
+      name="home"
+      className="h-screen w-full text-text-light dark:text-text-dark "
+    >
       <Hero />
       <About />
       <Portfolio />

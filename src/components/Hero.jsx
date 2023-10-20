@@ -3,11 +3,11 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 function Hero() {
   return (
-    <div className="sm:px-10 md:flex-row md:w-full flex flex-col items-center justify-center h-full bg-gradient-to-b dark:from-bg-dark  dark:to-secondary px-3">
+    <div className="sm:px-10 md:flex-row md:w-full flex flex-col items-center justify-center h-full bg-gradient-to-b from-bg-light  dark:from-bg-dark  dark:to-secondary-dark px-3">
       <div className="flex flex-col justify-center max-w-4xl">
         <h2 className="text-5xl sm:text-7xl font-bold font-code">
           I'm a{" "}
-          <span className="text-accent font-extrabold sm:text-8xl">
+          <span className="text-accent-light dark:text-accent-dark font-extrabold sm:text-8xl">
             Front End{" "}
           </span>
           Developer
@@ -19,7 +19,7 @@ function Hero() {
           repudiandae ad quidem!
         </p>
         <div className="">
-          <button className="group text-secondary w-fit px-6 py-3 my-2 flex items-center rounded-md bg-primary">
+          <button className="group w-fit px-6 py-3 my-2 flex items-center rounded-md text-secondary-light bg-primary-light dark:bg-primary-dark">
             Portfolio
             <span className="group-hover:rotate-90 duration-300 ml-1">
               <MdOutlineKeyboardArrowRight size={25} />
