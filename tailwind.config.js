@@ -6,14 +6,15 @@ export default {
     extend: {
       colors: {
         "text-light": "#0d051a",
-        "text-dark": "#ede5fa",
         "bg-light": "#F3F2F3",
-        "bg-dark": "#130727",
         "primary-light": "#321268",
-        "primary-dark": "#b697ed",
         "secondary-light": "#e7dcf9",
-        "secondary-dark": "#110623",
         "accent-light": "#6128bd",
+        //
+        "text-dark": "#ede5fa",
+        "bg-dark": "#130727",
+        "primary-dark": "#b697ed",
+        "secondary-dark": "#110623",
         "accent-dark": "#07e9ce",
       },
     },

@@ -19,7 +19,7 @@ function NavBar() {
   }, [themeDark]);
 
   return (
-    <div className="flex justify-between items-center w-full text-text-light dark:text-text-dark fixed bg-secondary border-b border-primary px-4 py-2 select-none">
+    <div className="flex justify-between items-center w-full text-text-light bg-bg-light  dark:bg-bg-dark dark:text-text-dark fixed bg-secondary border-b border-primary px-4 py-2 select-none">
       <div className="p-2 cursor-pointer">
         <a href="#">
           <h1 className="text-4xl ml-2 font-signature md:text-7xl">
