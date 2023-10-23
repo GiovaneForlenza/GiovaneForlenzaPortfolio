@@ -10,7 +10,7 @@ export const projects = [
     tags: ["React", "Tailwind", "API"],
     description: "",
     projectLink: "https://weather-lookup-react.netlify.app",
-    codeLink: "",
+    codeLink: "https://github.com/GiovaneForlenza/weather-app-youtube",
     photo: weather,
   },
   {
@@ -18,7 +18,7 @@ export const projects = [
     tags: ["React", "Tailwind", "API", "Local Storage"],
     description: "",
     projectLink: "https://parkinglot-control.netlify.app",
-    codeLink: "",
+    codeLink: "https://github.com/GiovaneForlenza/parking-lot-control",
     photo: parkingLot,
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     tags: ["React", "Scss", "Local Storage"],
     description: "",
     projectLink: "https://school-management-program.netlify.app",
-    codeLink: "",
+    codeLink: "https://github.com/GiovaneForlenza/school-management",
     photo: schoolManagement,
   },
   {
@@ -34,7 +34,7 @@ export const projects = [
     tags: ["React", "Scss"],
     description: "",
     projectLink: "https://recepie-book.netlify.app",
-    codeLink: "",
+    codeLink: "https://github.com/GiovaneForlenza/recipe-book",
     photo: recipeMenu,
   },
   {
@@ -42,7 +42,7 @@ export const projects = [
     tags: ["React", "Scss", "API"],
     description: "",
     projectLink: "https://react-project-cocktaildb.netlify.app",
-    codeLink: "",
+    codeLink: "https://github.com/GiovaneForlenza/cocktail-db",
     photo: cocktail,
   },
 ];

@@ -39,18 +39,14 @@ function ProjectDetails({ project, id }) {
         >
           Live demo <BiLinkExternal size={20} className="ml-3" />
         </a>
-        {[{ text: "Code", href: "#" }].map((btn, id) => {
-          return (
-            <a
-              href={btn.href}
-              key={id}
-              className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-3 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-            >
-              {btn.text}
-              <BsGithub size={20} className="ml-3" />
-            </a>
-          );
-        })}
+        <a
+          href={project.codeLink}
+          target="_blank"
+          className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-3 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+        >
+          Code
+          <BsGithub size={20} className="ml-3" />
+        </a>
       </div>
     </div>
   );

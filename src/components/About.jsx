@@ -1,4 +1,5 @@
 import React from "react";
+import { getTextFromScript } from "./TextsTranslations";
 
 function About() {
   return (
@@ -14,20 +15,7 @@ function About() {
         </div>
         <div className="">
           <p className="sm:text-xl mt-10 sm:mt-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            esse provident ullam, labore, nihil pariatur asperiores sequi a
-            tempora dolores dolore possimus voluptates dolor voluptate placeat
-            vitae quis, debitis cupiditate. Esse alias, debitis laboriosam
-            dolorem sequi voluptatem eius quaerat magnam beatae officia
-            repellendus, inventore quam. Odit unde eum reprehenderit architecto.
-          </p>
-          <p className="sm:text-xl mt-10 sm:mt-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            esse provident ullam, labore, nihil pariatur asperiores sequi a
-            tempora dolores dolore possimus voluptates dolor voluptate placeat
-            vitae quis, debitis cupiditate. Esse alias, debitis laboriosam
-            dolorem sequi voluptatem eius quaerat magnam beatae officia
-            repellendus, inventore quam. Odit unde eum reprehenderit architecto.
+            {getTextFromScript("English", "About")}
           </p>
         </div>
       </div>
