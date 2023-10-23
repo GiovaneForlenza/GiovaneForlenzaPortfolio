@@ -5,9 +5,9 @@ function Hero() {
   return (
     <div className="flex flex-col items-center justify-center h-full  bg-bg-light  dark:from-bg-dark  dark:bg-gradient-to-b dark:to-secondary-dark px-3 sm:px-10  lg:flex-row md:w-full sm:pt-40">
       <div className="flex flex-col justify-center max-w-3xl mr-6">
-        <h2 className="text-text-light text-5xl sm:text-7xl font-bold font-code dark:text-white">
+        <h2 className="text-text-light text-5xl sm:text-6xl font-bold font-terminal dark:text-white">
           I'm a{" "}
-          <span className="text-accent-light dark:text-accent-dark font-extrabold sm:text-8xl">
+          <span className=" text-accent-light dark:text-accent-dark font-extrabold sm:text-8xl">
             Front End{" "}
           </span>
           <br />

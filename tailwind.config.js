@@ -19,8 +19,9 @@ export default {
       },
     },
     fontFamily: {
-      signature: ["Great Vibes"],
-      code: ["Inconsolata"],
+      signature: ["Great Vibes", "sans-serif"],
+      terminal: ["Source Code Pro", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
 
     screens: {
