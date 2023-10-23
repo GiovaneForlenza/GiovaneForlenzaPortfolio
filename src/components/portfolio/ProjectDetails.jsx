@@ -35,7 +35,7 @@ function ProjectDetails({ project, id }) {
         <a
           href={project.projectLink}
           target="_blank"
-          className="inline-flex items-center mb-4 xs:mb-0 xs:mr-3  font-medium text-bg-light bg-primary-light hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-accent-dark dark:text-secondary-dark hover:-translate-y-0.5 duration-300"
+          className="inline-flex items-center mb-4 xs:mb-0 mr-3  font-medium text-bg-light bg-primary-light hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-accent-dark dark:text-secondary-dark hover:-translate-y-0.5 duration-300"
         >
           Live demo <BiLinkExternal size={20} className="ml-3" />
         </a>

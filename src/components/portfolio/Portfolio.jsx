@@ -24,10 +24,9 @@ function Portfolio() {
             >
               <div
                 className={`flex flex-col overflow-hidden items-center py-4 px-4 mx-auto max-w-screen-xl lg:flex-row  shadow-sm  ${
-                  id % 2 === 1 && "lg:flex-row-reverse"
+                  id % 2 === 0 && "lg:flex-row-reverse"
                 }`}
               >
-                <ProjectDetails project={project} id={id} />
                 <div className="mt-4 lg:mt-0 lg:w-2/3">
                   <a href={project.projectLink} target="_blank">
                     <img
@@ -37,6 +36,7 @@ function Portfolio() {
                     />
                   </a>
                 </div>
+                <ProjectDetails project={project} id={id} />
               </div>
             </section>
           );
