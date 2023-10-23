@@ -32,7 +32,7 @@ function NavBar() {
           {links.map((link, id) => {
             return (
               <li
-                className="px-4 cursor-pointer capitalize font-medium hover:text-accent-light dark:hover:text-accent-dark hover:scale-105 duration-200 mx-2"
+                className="px-4 cursor-pointer capitalize font-medium hover:text-accent-light dark:hover:text-accent-dark hover:scale-105 duration-200 mx-2 font-semibold"
                 key={id}
               >
                 {link}

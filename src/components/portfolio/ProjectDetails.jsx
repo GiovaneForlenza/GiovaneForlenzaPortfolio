@@ -2,18 +2,22 @@ import React from "react";
 
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
-function ProjectDetails({ project }) {
+function ProjectDetails({ project, id }) {
   return (
-    <div className="mt-4 md:mt-0  h-full flex items-start flex-col justify-between">
+    <div
+      className={`mt-4 md:mt-0 lg:w-1/3 h-full flex items-start flex-col justify-between ${
+        id % 2 === 1 ? "lg:ml-5" : "lg:mr-5"
+      }`}
+    >
       <div className="sm:mb-4">
         <h2 className="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
           {project.title}
         </h2>
-        <div className="mb-2 flex">
+        <div className="mb-2 flex flex-wrap">
           {project.tags.map((tag, id) => {
             return (
               <div
-                className="border-2 border-primary-light dark:border-accent-dark dark:text-white font-semibold px-3 tracking-widest  mr-3 rounded-full"
+                className="border-2 border-primary-light dark:border-accent-dark dark:text-white font-semibold px-3 tracking-widest  m-1 rounded-full"
                 key={id}
               >
                 {tag}
