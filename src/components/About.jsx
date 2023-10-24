@@ -22,11 +22,11 @@ function About({ isWebsiteEnglish }) {
 
   return (
     <div
-      className="md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-gradient-to-t dark:from-bg-dark  dark:to-secondary-dark sm:px-10"
+      className="pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-gradient-to-t dark:from-bg-dark  dark:to-secondary-dark sm:px-10"
       name="about"
     >
       <div className="max-w-4xl mx-auto ">
-        <div className="pb-2">
+        <div className="pb-10">
           <p className="text-text-light text-4xl font-bold inline border-b-4 border-b-accent-light dark:text-text-dark dark:border-b-accent-dark">
             {isWebsiteEnglish &&
               getTitleFromScript(
@@ -43,7 +43,7 @@ function About({ isWebsiteEnglish }) {
         <div className="">
           {arrayText.map((text, id) => {
             return (
-              <p className="sm:text-xl mt-10" key={id}>
+              <p className="sm:text-xl mt-2" key={id}>
                 {text}
               </p>
             );
