@@ -3,12 +3,14 @@ export const ENGLISH_SECTIONS = {
   ABOUT: "About Me",
   PORTFOLIO: "Portfolio",
   PORTFOLIO_BTN: "Portfolio_btn",
+  NAVIGATION: "Navigation",
 };
 export const BR_SECTIONS = {
   HERO: "Hero",
   SOBRE: "Sobre mim",
   PORTFOLIO: "Portifólio",
   PORTFOLIO_BTN: "Portfolio_btn",
+  NAVEGACAO: "Navegação",
 };
 
 export const WEBSITE_LANGUAGES = {
@@ -33,6 +35,10 @@ export const TEXT_ENGLISH = [
   },
   { title: "Portfolio", text: "Check out some of my work right here" },
   { title: "Portfolio_btn", text: "Check out my portfolio" },
+  {
+    title: "Navigation",
+    text: ["Home", "About", "Portfolio", "Experience", "Contact"],
+  },
 ];
 
 export const TEXT_BR = [
@@ -52,6 +58,10 @@ export const TEXT_BR = [
   },
   { title: "Portifólio", text: "Dê uma olhada nos meus trabalhos anteriores" },
   { title: "Portfolio_btn", text: "Veja meu portfólio" },
+  {
+    title: "Navegação",
+    text: ["Home", "Sobre mim", "Portifólio", "Experiência", "Contato"],
+  },
 ];
 
 export function getTextFromScript(language, title) {
