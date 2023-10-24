@@ -5,7 +5,7 @@ import { BiLinkExternal } from "react-icons/bi";
 function ProjectDetails({ project, id, isWebsiteEnglish }) {
   return (
     <div
-      className={`mt-4 lg:mt-0 lg:w-1/3 flex items-start flex-col justify-between ${
+      className={`mt-4 grow-0 lg:mt-0 lg:w-1/3 flex items-start flex-col justify-start ${
         id % 2 === 1 ? "lg:ml-5" : "lg:mr-5"
       }`}
     >
@@ -36,7 +36,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
           );
         })}
       </div>
-      <div className="flex border">
+      <div className="flex">
         {/* <a
           href={project.projectLink}
           target="_blank"
@@ -45,7 +45,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
           Live demo
         </a> */}
         <a
-          className="flex wrap items-center button px-4 mr-4 bg-blue-600 rounded-lg cursor-pointer select-none lg:active:translate-y-1  lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841] lg:active:border-b-[0px] transition-all duration-100 [box-shadow:0_5px_0_0_#1E40AF] border-b-[1px] border-blue-500 text-white text-md"
+          className="flex items-center button px-4 mr-4 bg-blue-600 rounded-lg cursor-pointer select-none lg:active:translate-y-1  lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841] lg:active:border-b-[0px] transition-all duration-100 [box-shadow:0_5px_0_0_#1E40AF] border-b-[1px] border-blue-500 text-white text-md"
           // href={project.projectLink}
           target="_blank"
         >
