@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import SocialLinks from "./components/SocialLinks";
 
 export default function App() {
-  const [isWebsiteEnglish, setIsWebsiteEnglish] = useState(false);
+  const [isWebsiteEnglish, setIsWebsiteEnglish] = useState(true);
   return (
     <div className="select-none">
       <NavBar

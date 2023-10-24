@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
+import { Tooltip } from "react-tooltip";
 function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
   const links = ["Home", "About", "Portfolio", "Experience", "Contact"];
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -55,6 +56,8 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
         <button
           className="px-4 hover:text-accent duration-300"
           onClick={handleThemeChange}
+          // data-tooltip-id="theme-tooltip"
+          // data-tooltip-content="Change the website theme"
         >
           {themeDark ? (
             <BsFillSunFill size={25} className="-translate-x-1" />
@@ -65,6 +68,8 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
         <button
           className="px-5 font-semibold text-lg"
           onClick={() => setIsWebsiteEnglish(!isWebsiteEnglish)}
+          data-tooltip-id="language-tooltip"
+          data-tooltip-content="Change the website language (BR or EN)"
         >
           {isWebsiteEnglish ? "BR" : "EN"}
         </button>
@@ -84,6 +89,8 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
           })}
         </ul>
       )}
+      <Tooltip id="language-tooltip" />
+      <Tooltip id="theme-tooltip" />
     </div>
   );
 }
