@@ -25,7 +25,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
             );
           })}
         </div>
-        <p className="font-light text-gray-500 md:text-lg dark:text-gray-400">
+        <p className="font-light text-gray-500 md:text-lg dark:text-gray-400 mb-2 md:m-0">
           Flowbite helps you connect with friends and communities of people who
           share your interests. Connecting with your friends and family as well
           as discovering new ones is easy with features like Groups.

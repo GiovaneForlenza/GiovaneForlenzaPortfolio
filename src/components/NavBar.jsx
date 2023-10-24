@@ -9,7 +9,6 @@ import {
   getTextFromScript,
 } from "./WebsiteTexts";
 function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
-  // const links = ["Home", "About", "Portfolio", "Experience", "Contact"];
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [themeDark, setThemeDark] = useState(true);
   const [links, setLinks] = useState([]);
@@ -95,11 +94,11 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
       </div>
 
       {isNavOpen && (
-        <ul className="border flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-bg-light text-text-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:text-text-dark lg:hidden">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-bg-light text-text-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:text-text-dark lg:hidden">
           {links.map((link, id) => {
             return (
               <li
-                className=" px-4 cursor-pointer capitalize py-6 text-4xl duration-200  "
+                className=" px-4 cursor-pointer capitalize py-3 text-4xl duration-200  "
                 key={id}
               >
                 {link}
@@ -108,7 +107,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
           })}
           <div className="flex items-center justify-center flex-col">
             <button
-              className="p-4 mb-2 hover:text-accent duration-300"
+              className="p-2 mb-2 hover:text-accent duration-300"
               onClick={handleThemeChange}
             >
               {themeDark ? (
@@ -118,7 +117,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
               )}
             </button>
             <button
-              className="p-4 mb  font-semibold text-lg"
+              className="p-2 mb  font-semibold text-lg"
               onClick={() => setIsWebsiteEnglish(!isWebsiteEnglish)}
               // data-tooltip-id="language-tooltip"
               // data-tooltip-content="Change the website language (BR or EN)"
