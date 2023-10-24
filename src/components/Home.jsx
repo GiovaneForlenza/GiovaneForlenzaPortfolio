@@ -3,15 +3,15 @@ import About from "./About";
 import Hero from "./Hero";
 import Portfolio from "./portfolio/Portfolio";
 
-function Home() {
+function Home({ isWebsiteEnglish, setIsWebsiteEnglish }) {
   return (
     <div
       name="home"
       className="h-screen w-full text-text-light dark:text-text-dark "
     >
-      <Hero />
-      <About />
-      <Portfolio />
+      <Hero isWebsiteEnglish={isWebsiteEnglish} />
+      <About isWebsiteEnglish={isWebsiteEnglish} />
+      <Portfolio isWebsiteEnglish={isWebsiteEnglish} />
     </div>
   );
 }

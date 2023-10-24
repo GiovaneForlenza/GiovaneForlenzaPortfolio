@@ -2,7 +2,7 @@ import React from "react";
 
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
-function ProjectDetails({ project, id }) {
+function ProjectDetails({ project, id, isWebsiteEnglish }) {
   return (
     <div
       className={`mt-4 md:mt-0 lg:w-1/3 h-full flex items-start flex-col justify-between ${
@@ -25,7 +25,7 @@ function ProjectDetails({ project, id }) {
             );
           })}
         </div>
-        <p className="font-light text-gray-500 md:text-lg dark:text-gray-400">
+        <p className="font-light text-gray-500 md:text-lg dark:text-gray-400 mb-2 md:m-0">
           Flowbite helps you connect with friends and communities of people who
           share your interests. Connecting with your friends and family as well
           as discovering new ones is easy with features like Groups.
@@ -44,7 +44,8 @@ function ProjectDetails({ project, id }) {
           target="_blank"
           className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 xs:mr-3 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
         >
-          Code
+          {isWebsiteEnglish && "Code"}
+          {!isWebsiteEnglish && "Código"}
           <BsGithub size={20} className="ml-3" />
         </a>
       </div>
