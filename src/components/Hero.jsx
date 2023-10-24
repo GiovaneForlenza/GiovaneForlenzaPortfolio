@@ -15,7 +15,6 @@ function Hero() {
           React Developer
         </h2>
         <p className="text-gray-500 py-4 max-w-4xl sm:text-xl w-full">
-          {getTextFromScript("English", "Hero")}
         </p>
         <div className="">
           <button className="group w-fit px-6 py-3 my-2 flex items-center rounded-md text-secondary-light bg-primary-light dark:bg-accent-light font-semibold">

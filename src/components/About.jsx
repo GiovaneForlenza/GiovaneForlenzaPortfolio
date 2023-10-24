@@ -8,15 +8,19 @@ function About() {
       name="about"
     >
       <div className="max-w-4xl mx-auto ">
-        <div className="pb-2 ">
+        <div className="pb-2 mb-10">
           <p className="text-text-light text-4xl font-bold inline border-b-4 border-b-accent-light dark:text-text-dark">
             About Me
           </p>
         </div>
         <div className="">
-          <p className="sm:text-xl mt-10 sm:mt-20">
-            {getTextFromScript("English", "About")}
-          </p>
+          {getTextFromScript("English", "About")[0].text.map((script, id) => {
+            return (
+              <p className="sm:text-xl mt-5 sm:mt-5" key={id}>
+                {script}
+              </p>
+            );
+          })}
         </div>
       </div>
     </div>

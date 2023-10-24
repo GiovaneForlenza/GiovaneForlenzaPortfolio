@@ -5,7 +5,7 @@ import ProjectDetails from "./ProjectDetails";
 function Portfolio() {
   return (
     <div
-      className="w-full px-3 py-8 flex items-center bg-bg-light   dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:px-10 "
+      className="w-full px-3 py-8 flex items-center bg-bg-light  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:px-10 "
       name="portfolio"
     >
       <div className="max-w-6xl mx-auto">
