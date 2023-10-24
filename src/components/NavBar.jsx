@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
-function NavBar() {
+function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
   const links = ["Home", "About", "Portfolio", "Experience", "Contact"];
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [themeDark, setThemeDark] = useState(true);
@@ -33,12 +33,12 @@ function NavBar() {
           </h1>
         </a>
       </div>
-      <div className=" flex">
+      <div className="items-center flex">
         <ul className="hidden lg:flex">
           {links.map((link, id) => {
             return (
               <li
-                className="px-4 cursor-pointer capitalize font-medium hover:text-accent-light dark:hover:text-accent-dark hover:scale-105 duration-200 mx-2 font-semibold"
+                className="px-4 cursor-pointer capitalize  hover:text-accent-light dark:hover:text-accent-dark hover:scale-105 duration-200 mx-2 font-semibold"
                 key={id}
               >
                 {link}
@@ -61,6 +61,12 @@ function NavBar() {
           ) : (
             <BsMoonFill size={25} />
           )}
+        </button>
+        <button
+          className="px-5 font-semibold text-lg"
+          onClick={() => setIsWebsiteEnglish(!isWebsiteEnglish)}
+        >
+          {isWebsiteEnglish ? "BR" : "EN"}
         </button>
       </div>
 
