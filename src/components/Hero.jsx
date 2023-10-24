@@ -25,10 +25,10 @@ function Hero({ isWebsiteEnglish }) {
   }, [isWebsiteEnglish]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full  bg-bg-light  dark:from-bg-dark  dark:bg-gradient-to-b dark:to-secondary-dark px-3 sm:px-10  lg:flex-row md:w-full sm:pt-40">
-      <div className="flex flex-col justify-center max-w-3xl mr-6">
-        <h2 className="text-center text-text-light text-4xl mb-2 sm:text-6xl md:text-left font-bold font-terminal dark:text-white">
-          I'm a{" "}
+    <div className="flex flex-col items-center justify-center h-full  bg-bg-light  dark:from-bg-dark  dark:bg-gradient-to-b dark:to-secondary-dark px-3 sm:px-10  lg:flex-row md:w-full">
+      <div className="flex flex-col justify-center max-w-4xl">
+        <h2 className="text-center sm:text-left text-text-light text-4xl mb-2 sm:text-6xl md:text-left font-bold font-terminal dark:text-white">
+          I'm a <br className="hidden sm:flex md:hidden" />
           <span className=" text-accent-light dark:text-accent-dark font-extrabold sm:text-8xl">
             Front End{" "}
           </span>
@@ -47,7 +47,7 @@ function Hero({ isWebsiteEnglish }) {
             );
           })}
         <div className="flex items-center justify-center md:justify-start mt-5">
-          <button className="group w-fit px-6 py-3 my-2 flex items-center rounded-md text-secondary-light bg-primary-light dark:bg-accent-light font-semibold">
+          <button className="group flex items-center button px-5 py-3 mr-4 bg-blue-600 rounded-lg cursor-pointer select-none lg:active:translate-y-1  lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841] lg:active:border-b-[0px] transition-all duration-100 [box-shadow:0_5px_0_0_#1E40AF] border-b-[1px] border-blue-500 text-white text-md">
             {isWebsiteEnglish &&
               getTextFromScript(
                 WEBSITE_LANGUAGES.ENGLISH,

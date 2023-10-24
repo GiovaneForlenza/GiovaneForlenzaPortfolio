@@ -22,8 +22,8 @@ function Portfolio({ isWebsiteEnglish }) {
       name="portfolio"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="pb-2">
-          <p className=" text-4xl font-bold inline border-b-4 dark:border-b-primary-light">
+        <div className="">
+          <p className="text-4xl font-bold inline border-b-4 border-b-accent-light dark:border-b-accent-dark">
             {isWebsiteEnglish &&
               getTitleFromScript(
                 WEBSITE_LANGUAGES.ENGLISH,
@@ -55,7 +55,7 @@ function Portfolio({ isWebsiteEnglish }) {
               key={id}
             >
               <div
-                className={`flex flex-col overflow-hidden items-center py-4 px-4 mx-auto max-w-screen-xl lg:flex-row  shadow-sm  ${
+                className={`flex flex-col py-4 px-4 mx-auto max-w-screen-xl lg:flex-row  shadow-sm  ${
                   id % 2 === 0 && "lg:flex-row-reverse"
                 }`}
               >

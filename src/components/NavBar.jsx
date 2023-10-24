@@ -43,7 +43,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
     <div className="flex justify-between items-center w-full text-text-light bg-bg-light  dark:bg-bg-dark dark:text-text-dark fixed bg-secondary border-b border-primary px-4 py-2 select-none">
       <div className="p-2 cursor-pointer ">
         <a href="#">
-          <h1 className="text-3xl  ml-2  md:text-6xl font-terminal">
+          <h1 className="text-xl sm:text-2xl ml-2  md:text-5xl font-terminal">
             <span className="text-accent-light dark:text-accent-dark font-semibold">
               {"<"}
             </span>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BR_SECTIONS,
   ENGLISH_SECTIONS,
@@ -8,7 +8,17 @@ import {
 } from "./WebsiteTexts";
 
 function About({ isWebsiteEnglish }) {
-  useEffect(() => {}, [isWebsiteEnglish]);
+  const [arrayText, setArrayText] = useState([]);
+  useEffect(() => {
+    if (isWebsiteEnglish)
+      setArrayText(
+        getTextFromScript(WEBSITE_LANGUAGES.ENGLISH, ENGLISH_SECTIONS.ABOUT),
+      );
+    else
+      setArrayText(
+        getTextFromScript(WEBSITE_LANGUAGES.PORTUGUESE, BR_SECTIONS.SOBRE),
+      );
+  }, [isWebsiteEnglish]);
 
   return (
     <div
@@ -17,7 +27,7 @@ function About({ isWebsiteEnglish }) {
     >
       <div className="max-w-4xl mx-auto ">
         <div className="pb-2">
-          <p className="text-text-light text-4xl font-bold inline border-b-4 border-b-accent-light dark:text-text-dark">
+          <p className="text-text-light text-4xl font-bold inline border-b-4 border-b-accent-light dark:text-text-dark dark:border-b-accent-dark">
             {isWebsiteEnglish &&
               getTitleFromScript(
                 WEBSITE_LANGUAGES.ENGLISH,
@@ -31,9 +41,13 @@ function About({ isWebsiteEnglish }) {
           </p>
         </div>
         <div className="">
-          <p className="sm:text-xl mt-10 sm:mt-20">
-            {getTextFromScript("English", "About")}
-          </p>
+          {arrayText.map((text, id) => {
+            return (
+              <p className="sm:text-xl mt-10" key={id}>
+                {text}
+              </p>
+            );
+          })}
         </div>
       </div>
     </div>
