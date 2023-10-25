@@ -82,7 +82,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
             data-tooltip-id="language-tooltip"
             data-tooltip-content="Change the website language (BR or EN)"
           >
-            {isWebsiteEnglish ? "BR" : "EN"}
+            {isWebsiteEnglish ? "PT-BR" : "EN"}
           </button>
         </ul>
         <div
@@ -122,7 +122,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
               // data-tooltip-id="language-tooltip"
               // data-tooltip-content="Change the website language (BR or EN)"
             >
-              {isWebsiteEnglish ? "BR" : "EN"}
+              {isWebsiteEnglish ? "PT-BR" : "EN"}
             </button>
           </div>
         </ul>
