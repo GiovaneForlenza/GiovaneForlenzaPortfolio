@@ -1,17 +1,16 @@
 import React from "react";
 
-function NavBarLinks({ links, headerStyle }) {
+function NavBarLinks({ links, linkId }) {
+  const namesOfSectionsIds = ["#home", "#about", "#skills", "#portfolio"];
   links.map((link, id) => {
     return (
-      <li
-        className=//     ? "px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 mx-2 hover:text-white" //   headerStyle === "header" // {
-        //     : "px-4 cursor-pointer capitalize py-6 text-4xl border"
-        // }
-        "px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 mx-2 hover:text-white"
+      <a
+        className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 mx-2 hover:text-white"
         key={id}
+        href={namesOfSectionsIds[linkId]}
       >
-        {link}
-      </li>
+        a{link}
+      </a>
     );
   });
 }

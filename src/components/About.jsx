@@ -6,6 +6,7 @@ import {
   getTextFromScript,
   getTitleFromScript,
 } from "./WebsiteTexts";
+import "../scroll-animation.css";
 
 function About({ isWebsiteEnglish }) {
   const [arrayText, setArrayText] = useState([]);
@@ -22,22 +23,22 @@ function About({ isWebsiteEnglish }) {
 
   return (
     <div
-      className="pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-gradient-to-t dark:from-bg-dark  dark:to-secondary-dark sm:px-10"
+      className="pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-gradient-to-t dark:from-bg-dark  dark:to-secondary-dark sm:px-10 "
       name="about"
+      id="about"
     >
-      <div className="max-w-4xl mx-auto ">
+      <div className="max-w-4xl mx-auto scroll-animation">
         <div className="pb-10">
           <p className="text-text-light text-4xl font-bold inline border-b-4 border-b-accent-light dark:text-text-dark dark:border-b-accent-dark">
-            {isWebsiteEnglish &&
-              getTitleFromScript(
-                WEBSITE_LANGUAGES.ENGLISH,
-                ENGLISH_SECTIONS.ABOUT,
-              )}
-            {!isWebsiteEnglish &&
-              getTitleFromScript(
-                WEBSITE_LANGUAGES.PORTUGUESE,
-                BR_SECTIONS.SOBRE,
-              )}
+            {isWebsiteEnglish
+              ? getTitleFromScript(
+                  WEBSITE_LANGUAGES.ENGLISH,
+                  ENGLISH_SECTIONS.ABOUT,
+                )
+              : getTitleFromScript(
+                  WEBSITE_LANGUAGES.PORTUGUESE,
+                  BR_SECTIONS.SOBRE,
+                )}
           </p>
         </div>
         <div className="">

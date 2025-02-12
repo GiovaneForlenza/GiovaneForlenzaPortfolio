@@ -38,9 +38,9 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
         getTextFromScript(WEBSITE_LANGUAGES.PORTUGUESE, BR_SECTIONS.NAVEGACAO),
       );
   }, [isWebsiteEnglish]);
-
+  const namesOfSectionsIds = ["#home", "#about", "#skills", "#portfolio"];
   return (
-    <div className="flex justify-between items-center w-full text-text-light bg-bg-light  dark:bg-bg-dark dark:text-text-dark fixed bg-secondary border-b border-primary px-4 py-2 select-none">
+    <div className="flex justify-between items-center w-full text-text-light bg-bg-light  dark:bg-bg-dark dark:text-text-dark fixed bg-secondary border-b border-primary px-4 py-2 select-none z-10">
       <div className="p-2 cursor-pointer ">
         <a href="#">
           <h1 className="text-xl sm:text-2xl ml-2  md:text-5xl font-terminal">
@@ -58,12 +58,14 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
         <ul className="hidden lg:flex">
           {links.map((link, id) => {
             return (
-              <li
+              <a
                 className="px-4 cursor-pointer capitalize  hover:text-accent-light dark:hover:text-accent-dark hover:scale-105 duration-200 mx-2 font-semibold"
                 key={id}
+                linkId={id}
+                href={namesOfSectionsIds[id]}
               >
                 {link}
-              </li>
+              </a>
             );
           })}
           <button

@@ -9,6 +9,8 @@ import {
   getTitleFromScript,
 } from "../WebsiteTexts";
 
+import "../../scroll-animation.css";
+
 function Portfolio({ isWebsiteEnglish }) {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
@@ -20,38 +22,37 @@ function Portfolio({ isWebsiteEnglish }) {
     <div
       className="w-full px-3 py-8 flex items-center bg-bg-light  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:px-10 "
       name="portfolio"
+      id="portfolio"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="">
-          <p className="text-4xl font-bold inline border-b-4 border-b-accent-light dark:border-b-accent-dark">
-            {isWebsiteEnglish &&
-              getTitleFromScript(
-                WEBSITE_LANGUAGES.ENGLISH,
-                ENGLISH_SECTIONS.PORTFOLIO,
-              )}
-            {!isWebsiteEnglish &&
-              getTitleFromScript(
-                WEBSITE_LANGUAGES.PORTUGUESE,
-                BR_SECTIONS.PORTFOLIO,
-              )}
+        <div className="scroll-animation">
+          <p className="text-4xl font-bold inline border-b-4 border-b-accent-light dark:border-b-accent-dark ">
+            {isWebsiteEnglish
+              ? getTitleFromScript(
+                  WEBSITE_LANGUAGES.ENGLISH,
+                  ENGLISH_SECTIONS.PORTFOLIO,
+                )
+              : getTitleFromScript(
+                  WEBSITE_LANGUAGES.PORTUGUESE,
+                  BR_SECTIONS.PORTFOLIO,
+                )}
           </p>
           <p className="text-xl my-8 ">
-            {isWebsiteEnglish &&
-              getTextFromScript(
-                WEBSITE_LANGUAGES.ENGLISH,
-                ENGLISH_SECTIONS.PORTFOLIO,
-              )}
-            {!isWebsiteEnglish &&
-              getTextFromScript(
-                WEBSITE_LANGUAGES.PORTUGUESE,
-                BR_SECTIONS.PORTFOLIO,
-              )}
+            {isWebsiteEnglish
+              ? getTextFromScript(
+                  WEBSITE_LANGUAGES.ENGLISH,
+                  ENGLISH_SECTIONS.PORTFOLIO,
+                )
+              : getTextFromScript(
+                  WEBSITE_LANGUAGES.PORTUGUESE,
+                  BR_SECTIONS.PORTFOLIO,
+                )}
           </p>
         </div>
         {projects.map((project, id) => {
           return (
             <section
-              className=" bg-white dark:bg-gray-900 my-10 rounded-md border dark:border-0 border-gray-300"
+              className="scroll-animation bg-white dark:bg-gray-900 my-10 rounded-md border dark:border-none border-gray-300"
               key={id}
             >
               <div

@@ -29,15 +29,15 @@ export const TEXT_ENGLISH = [
   {
     title: "About Me",
     text: [
-      "I am 24 years old, and I've been studying programming since 2017.",
-      "In 2021, I graduated from Conestoga College (Canada), with a Computer Programming degree.",
+      "As a Brazilian developer with a global mindset, I’ve turned curiosity into code since 2017. My journey took a pivotal turn in 2019 when I moved to Canada to pursue a Computer Programming diploma at Conestoga College an experience that sharpened my technical foundation and taught me to craft solutions that bridge functionality and user needs.",
+      "Specializing in React since 2021, I thrive on self-directed learning and building applications that simplify lives. Whether creating tools for personal use or client-driven projects, I prioritize clean architecture, responsive design, and meaningful impact. To me, coding isn’t just logic, it’s solving real-world puzzles with creativity and precision.",
     ],
   },
   { title: "Portfolio", text: "Check out some of my work right here" },
   { title: "Portfolio_btn", text: "Check out my portfolio" },
   {
     title: "Navigation",
-    text: ["Home", "About", "Portfolio", "Experience", "Contact"],
+    text: ["Home", "About", "Skills", "Portfolio"],
   },
 ];
 
@@ -52,15 +52,15 @@ export const TEXT_BR = [
   {
     title: "Sobre mim",
     text: [
-      "Eu tenho 24 anos, e estudo programação desde 2017",
-      "Eu 2021 eu me formei como programador na faculdade Conestoga College, no Canadá",
+      "Sou um desenvolvedor brasileiro com uma visão global, transformei curiosidade em código desde 2017. Minha trajetória ganhou um novo rumo em 2019, quando me mudei para o Canadá para estudar Programação de Computadores no Conestoga College—uma experiência que solidificou minha base técnica e me ensinou a criar soluções que unem funcionalidade às necessidades do usuário.",
+      "Estudo React desde 2021, me dedico ao aprendizado autodidata e ao desenvolvimento de aplicações que simplificam a vida. Seja criando ferramentas para uso pessoal ou projetos para clientes, priorizo arquitetura limpa, design responsivo e impacto significativo. Para mim, programar não é apenas lógica, é resolver problemas reais com criatividade e precisão.",
     ],
   },
   { title: "Portifólio", text: "Vem conferir um pouco do que eu fiz até aqui" },
   { title: "Portfolio_btn", text: "Confira o meu portfólio" },
   {
     title: "Navegação",
-    text: ["Home", "Sobre mim", "Portifólio", "Experiência", "Contato"],
+    text: ["Home", "Sobre mim", "Skills", "Portifólio"],
   },
 ];
 

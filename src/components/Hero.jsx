@@ -25,7 +25,10 @@ function Hero({ isWebsiteEnglish }) {
   }, [isWebsiteEnglish]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full  bg-bg-light  dark:from-bg-dark  dark:bg-gradient-to-b dark:to-secondary-dark px-3 sm:px-10  lg:flex-row md:w-full">
+    <div
+      id="home"
+      className="flex flex-col items-center justify-center h-full  bg-bg-light  dark:from-bg-dark  dark:bg-gradient-to-b dark:to-secondary-dark px-3 sm:px-10  lg:flex-row md:w-full"
+    >
       <div className="flex flex-col justify-center max-w-4xl">
         <h2 className="text-center sm:text-left text-text-light text-4xl mb-2 sm:text-6xl md:text-left font-bold font-terminal dark:text-white">
           I'll be your <br className="hidden sm:flex md:hidden" />

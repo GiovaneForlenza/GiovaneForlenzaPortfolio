@@ -15,7 +15,7 @@ export default function App() {
         isWebsiteEnglish={isWebsiteEnglish}
         setIsWebsiteEnglish={setIsWebsiteEnglish}
       />
-      <SocialLinks />
+      {/* <SocialLinks /> */}
     </div>
   );
 }
