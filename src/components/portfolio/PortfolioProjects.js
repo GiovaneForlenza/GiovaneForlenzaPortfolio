@@ -6,17 +6,17 @@ import cocktail from "../../assets/portfolio/cocktailSelection.jpg";
 import taskList from "../../assets/portfolio/taskList.png";
 
 export const PROJECTS_EN = [
-  {
-    title: "Weather forecast",
-    tags: ["React", "Tailwind", "API"],
-    description: [
-      "This project leverages the OpenWeatherAPI to deliver real-time weather data and forecasts (hourly/daily) for cities worldwide.",
-      "Simply type a city name and watch the digital clouds part 🌤️, the interactive dashboard with dynamic visuals does the rest!",
-    ],
-    projectLink: "https://weather-lookup-react.netlify.app",
-    codeLink: "https://github.com/GiovaneForlenza/weather-app-youtube",
-    photo: weather,
-  },
+  // {
+  //   title: "Weather forecast",
+  //   tags: ["React", "Tailwind", "API"],
+  //   description: [
+  //     "This project leverages the OpenWeatherAPI to deliver real-time weather data and forecasts (hourly/daily) for cities worldwide.",
+  //     "Simply type a city name and watch the digital clouds part 🌤️, the interactive dashboard with dynamic visuals does the rest!",
+  //   ],
+  //   projectLink: "https://weather-lookup-react.netlify.app",
+  //   codeLink: "https://github.com/GiovaneForlenza/weather-app-youtube",
+  //   photo: weather,
+  // },
   // {
   //   title: "Parking lot control",
   //   tags: ["React", "Tailwind", "API", "Local Storage"],
@@ -76,17 +76,17 @@ export const PROJECTS_EN = [
 ];
 
 export const PROJECTS_BR = [
-  {
-    title: "Clima Tempo",
-    tags: ["React", "Tailwind", "API"],
-    description: [
-      "Este projeto utiliza a OpenWeatherAPI para fornecer dados meteorológicos em tempo real e previsões (horárias/diárias) de cidades ao redor do globo.",
-      "Apenas escreva o nome da cidade que você quer procurar e veja a mágica acontecer diante dos seus olhos!",
-    ],
-    projectLink: "https://weather-lookup-react.netlify.app",
-    codeLink: "https://github.com/GiovaneForlenza/weather-app-youtube",
-    photo: weather,
-  },
+  // {
+  //   title: "Clima Tempo",
+  //   tags: ["React", "Tailwind", "API"],
+  //   description: [
+  //     "Este projeto utiliza a OpenWeatherAPI para fornecer dados meteorológicos em tempo real e previsões (horárias/diárias) de cidades ao redor do globo.",
+  //     "Apenas escreva o nome da cidade que você quer procurar e veja a mágica acontecer diante dos seus olhos!",
+  //   ],
+  //   projectLink: "https://weather-lookup-react.netlify.app",
+  //   codeLink: "https://github.com/GiovaneForlenza/weather-app-youtube",
+  //   photo: weather,
+  // },
   // {
   //   title: "Controle de estacionamento",
   //   tags: ["React", "Tailwind", "API", "Local Storage"],
