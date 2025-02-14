@@ -3,7 +3,7 @@ import parkingLot from "../../assets/portfolio/parkinglotControl.jpg";
 import schoolManagement from "../../assets/portfolio/schoolManagement.jpg";
 import recipeMenu from "../../assets/portfolio/foodMenu.jpg";
 import cocktail from "../../assets/portfolio/cocktailSelection.jpg";
-import taskList from "../../assets/portfolio/taskList.jpg";
+import taskList from "../../assets/portfolio/taskList.png";
 
 export const PROJECTS_EN = [
   {
