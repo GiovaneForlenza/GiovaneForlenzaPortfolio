@@ -1,7 +1,7 @@
 import weather from "../../assets/portfolio/reactWeatherLookup.jpg";
-import parkingLot from "../../assets/portfolio/parkinglotControl.jpg";
-import schoolManagement from "../../assets/portfolio/schoolManagement.jpg";
-import recipeMenu from "../../assets/portfolio/foodMenu.jpg";
+// import parkingLot from "../../assets/portfolio/parkinglotControl.jpg";
+// import schoolManagement from "../../assets/portfolio/schoolManagement.jpg";
+import recipeMenu from "../../assets/portfolio/recipeBookMockup.png";
 import cocktail from "../../assets/portfolio/cocktailSelection.jpg";
 import taskList from "../../assets/portfolio/taskList.png";
 
