@@ -99,12 +99,14 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-bg-light text-text-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:text-text-dark lg:hidden">
           {links.map((link, id) => {
             return (
-              <li
+              <a
                 className=" px-4 cursor-pointer capitalize py-3 text-4xl duration-200  "
                 key={id}
+                href={namesOfSectionsIds[id]}
+                onClick={() => setIsNavOpen(false)}
               >
                 {link}
-              </li>
+              </a>
             );
           })}
           <div className="flex items-center justify-center flex-col">

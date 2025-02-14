@@ -3,7 +3,7 @@ import weather from "../../assets/portfolio/reactWeatherLookup.jpg";
 // import schoolManagement from "../../assets/portfolio/schoolManagement.jpg";
 import recipeMenu from "../../assets/portfolio/recipeBookMockup.png";
 import cocktail from "../../assets/portfolio/cocktailSelection.jpg";
-import taskList from "../../assets/portfolio/taskList.png";
+import taskList from "../../assets/portfolio/taskListMockup.png";
 
 export const PROJECTS_EN = [
   // {

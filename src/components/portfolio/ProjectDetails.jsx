@@ -45,7 +45,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
           Live demo
         </a> */}
         <a
-          className="flex items-center button px-4 mr-4 bg-blue-600 rounded-lg cursor-pointer select-none lg:active:translate-y-1  lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841] lg:active:border-b-[0px] transition-all duration-100 [box-shadow:0_5px_0_0_#1E40AF] border-b-[1px] border-blue-500 text-white text-md"
+          className="flex items-center button px-4 mr-4 bg-accent-light dark:bg-blue-600 rounded-lg cursor-pointer select-none lg:active:translate-y-1  lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841] lg:active:border-b-[0px] transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:[box-shadow:0_5px_0_0_#1E40AF] border-b-[1px] border-accent-light dark:border-blue-500 text-white text-md"
           href={project.projectLink}
           target="_blank"
         >

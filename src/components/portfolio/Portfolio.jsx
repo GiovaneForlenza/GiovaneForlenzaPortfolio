@@ -20,7 +20,7 @@ function Portfolio({ isWebsiteEnglish }) {
 
   return (
     <div
-      className="w-full px-3 py-8 flex items-center bg-bg-light  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:px-10 "
+      className="w-full px-3 py-8 flex items-center bg-bg-light  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:p-10 sm:py-20"
       name="portfolio"
       id="portfolio"
     >

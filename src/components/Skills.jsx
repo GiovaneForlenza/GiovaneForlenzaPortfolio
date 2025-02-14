@@ -29,7 +29,7 @@ function Skills({ isWebsiteEnglish }) {
 
   return (
     <div
-      className="pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-bg-dark sm:px-10 "
+      className="pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-bg-dark  sm:p-10 sm:py-20"
       name="skills"
       id="skills"
     >

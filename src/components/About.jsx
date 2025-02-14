@@ -23,7 +23,7 @@ function About({ isWebsiteEnglish }) {
 
   return (
     <div
-      className="pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-gradient-to-t dark:from-bg-dark  dark:to-secondary-dark sm:px-10 "
+      className="lg:pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-gradient-to-t dark:from-bg-dark  dark:to-secondary-dark sm:p-10 sm:py-20 "
       name="about"
       id="about"
     >
