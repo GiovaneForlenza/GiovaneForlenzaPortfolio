@@ -3,6 +3,7 @@ import parkingLot from "../../assets/portfolio/parkinglotControl.jpg";
 import schoolManagement from "../../assets/portfolio/schoolManagement.jpg";
 import recipeMenu from "../../assets/portfolio/foodMenu.jpg";
 import cocktail from "../../assets/portfolio/cocktailSelection.jpg";
+import taskList from "../../assets/portfolio/taskList.jpg";
 
 export const PROJECTS_EN = [
   {
@@ -38,6 +39,18 @@ export const PROJECTS_EN = [
   //   codeLink: "https://github.com/GiovaneForlenza/school-management",
   //   photo: schoolManagement,
   // },
+
+  {
+    title: "Task List",
+    tags: ["React", "NextJS", "TypeScript", "Local Storage", "Scss"],
+    description: [
+      "A streamlined task management web app built with Next.js and React, enabling users to create, organize, and store tasks with titles and descriptions. Tasks persist via browser local storage, ensuring data retention between sessions.",
+      "Features a clean, intuitive interface styled with SCSS for maintainable and scalable CSS architecture.",
+    ],
+    projectLink: "https://task-list-gff.netlify.app/",
+    codeLink: "https://github.com/GiovaneForlenza/todo-list-react-2025",
+    photo: taskList,
+  },
   {
     title: "Recipe Menu",
     tags: ["React", "Scss"],
@@ -96,6 +109,18 @@ export const PROJECTS_BR = [
   //   codeLink: "https://github.com/GiovaneForlenza/school-management",
   //   photo: schoolManagement,
   // },
+
+  {
+    title: "Task List",
+    tags: ["React", "NextJS", "TypeScript", "Local Storage", "Scss"],
+    description: [
+      "Aplicativo web de gerenciamento de tarefas desenvolvido com Next.js e React, permitindo a criação, organização e armazenamento de tarefas com títulos e descrições. Os dados são persistidos via local storage do navegador, garantindo retenção entre sessões.",
+      "Interface limpa e intuitiva, estilizada com SCSS para uma arquitetura CSS modular e escalável.",
+    ],
+    projectLink: "https://task-list-gff.netlify.app/",
+    codeLink: "https://github.com/GiovaneForlenza/todo-list-react-2025",
+    photo: taskList,
+  },
   {
     title: "Menu de receitas",
     tags: ["React", "Scss"],
