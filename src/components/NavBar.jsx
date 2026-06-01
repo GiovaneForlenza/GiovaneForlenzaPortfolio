@@ -40,26 +40,26 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
   }, [isWebsiteEnglish]);
   const namesOfSectionsIds = ["#home", "#about", "#skills", "#portfolio"];
   return (
-    <div className="flex justify-between items-center w-full text-text-light bg-bg-light  dark:bg-bg-dark dark:text-text-dark fixed bg-secondary border-b border-primary px-4 py-2 select-none z-10">
-      <div className="p-2 cursor-pointer ">
+    <div className="bg-secondary border-primary fixed z-10 flex w-full  select-none items-center justify-between border-b bg-bg-light px-4 py-2 text-text-light dark:bg-bg-dark dark:text-text-dark">
+      <div className="cursor-pointer p-2 ">
         <a href="#">
-          <h1 className="text-xl sm:text-2xl ml-2  md:text-5xl font-terminal">
-            <span className="text-accent-light dark:text-accent-dark font-semibold">
+          <h1 className="ml-2 font-terminal text-xl  sm:text-2xl md:text-5xl">
+            <span className="font-semibold text-accent-light dark:text-accent-dark">
               {"<"}
             </span>
             Giovane Forlenza
-            <span className="text-accent-light dark:text-accent-dark font-semibold">
+            <span className="font-semibold text-accent-light dark:text-accent-dark">
               {" />"}
             </span>
           </h1>
         </a>
       </div>
-      <div className="items-center flex">
+      <div className="flex items-center">
         <ul className="hidden lg:flex">
           {links.map((link, id) => {
             return (
               <a
-                className="px-4 cursor-pointer capitalize  hover:text-accent-light dark:hover:text-accent-dark hover:scale-105 duration-200 mx-2 font-semibold"
+                className="mx-2 cursor-pointer px-4  font-semibold capitalize duration-200 hover:scale-105 hover:text-accent-light dark:hover:text-accent-dark"
                 key={id}
                 linkId={id}
                 href={namesOfSectionsIds[id]}
@@ -69,7 +69,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
             );
           })}
           <button
-            className="px-4 hover:text-accent duration-300"
+            className="hover:text-accent px-4 duration-300"
             onClick={handleThemeChange}
           >
             {themeDark ? (
@@ -79,7 +79,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
             )}
           </button>
           <button
-            className="px-5 font-semibold text-lg"
+            className="px-5 text-lg font-semibold"
             onClick={() => setIsWebsiteEnglish(!isWebsiteEnglish)}
             data-tooltip-id="language-tooltip"
             data-tooltip-content="Change the website language (BR or EN)"
@@ -88,7 +88,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
           </button>
         </ul>
         <div
-          className="lg:hidden inline-block cursor-pointer p-2 mr-2 z-10  text-text-light dark:text-white duration-200"
+          className="z-10 mr-2 inline-block cursor-pointer p-2 text-text-light  duration-200 dark:text-white lg:hidden"
           onClick={() => setIsNavOpen(!isNavOpen)}
         >
           {isNavOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
@@ -96,11 +96,11 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
       </div>
 
       {isNavOpen && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-bg-light text-text-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:text-text-dark lg:hidden">
+        <ul className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-bg-light text-text-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:text-text-dark lg:hidden">
           {links.map((link, id) => {
             return (
               <a
-                className=" px-4 cursor-pointer capitalize py-3 text-4xl duration-200  "
+                className=" cursor-pointer px-4 py-3 text-4xl capitalize duration-200  "
                 key={id}
                 href={namesOfSectionsIds[id]}
                 onClick={() => setIsNavOpen(false)}
@@ -109,9 +109,9 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
               </a>
             );
           })}
-          <div className="flex items-center justify-center flex-col">
+          <div className="flex flex-col items-center justify-center">
             <button
-              className="p-2 mb-2 hover:text-accent duration-300"
+              className="hover:text-accent mb-2 p-2 duration-300"
               onClick={handleThemeChange}
             >
               {themeDark ? (
@@ -121,7 +121,7 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
               )}
             </button>
             <button
-              className="p-2 mb  font-semibold text-lg"
+              className="mb p-2  text-lg font-semibold"
               onClick={() => setIsWebsiteEnglish(!isWebsiteEnglish)}
               // data-tooltip-id="language-tooltip"
               // data-tooltip-content="Change the website language (BR or EN)"

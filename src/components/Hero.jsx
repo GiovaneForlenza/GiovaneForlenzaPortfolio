@@ -27,12 +27,12 @@ function Hero({ isWebsiteEnglish }) {
   return (
     <div
       id="home"
-      className="flex flex-col items-center justify-center h-full  bg-bg-light  dark:from-bg-dark  dark:bg-gradient-to-b dark:to-secondary-dark px-3 sm:px-10  lg:flex-row md:w-full"
+      className="flex h-full flex-col items-center justify-center  bg-bg-light  px-3  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark sm:px-10  md:w-full lg:flex-row"
     >
-      <div className="flex flex-col justify-center max-w-4xl">
-        <h2 className="text-center sm:text-left text-text-light text-4xl mb-2 sm:text-6xl md:text-left font-bold font-terminal dark:text-white">
+      <div className="flex max-w-4xl flex-col justify-center">
+        <h2 className="mb-2 text-center font-terminal text-4xl font-bold text-text-light dark:text-white sm:text-left sm:text-6xl md:text-left">
           I'll be your <br className="hidden sm:flex md:hidden" />
-          <span className=" text-accent-light dark:text-accent-dark font-extrabold sm:text-8xl">
+          <span className=" font-extrabold text-accent-light dark:text-accent-dark sm:text-8xl">
             Front End{" "}
           </span>
           React Developer
@@ -42,16 +42,16 @@ function Hero({ isWebsiteEnglish }) {
           heroText.map((text, id) => {
             return (
               <p
-                className="text-center text-gray-500 py-1 max-w-4xl sm:text-xl md:text-left  w-full"
+                className="w-full max-w-4xl py-1 text-center text-gray-500 sm:text-xl  md:text-left"
                 key={id}
               >
                 {text}
               </p>
             );
           })}
-        <div className="flex items-center justify-center md:justify-start mt-5">
+        <div className="mt-5 flex items-center justify-center md:justify-start">
           <a
-            className="group flex items-center button px-5 py-3 mr-4 bg-accent-light dark:bg-blue-600 rounded-lg cursor-pointer select-none lg:active:translate-y-1  lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841] lg:active:border-b-[0px] transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:[box-shadow:0_5px_0_0_#1E40AF] border-b-[1px] border-accent-light dark:border-blue-500 text-white text-md"
+            className="button text-md group mr-4 flex cursor-pointer select-none items-center rounded-lg border-b-[1px] border-accent-light bg-accent-light px-5  py-3 text-white transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:border-blue-500 dark:bg-blue-600 dark:[box-shadow:0_5px_0_0_#1E40AF] lg:active:translate-y-1 lg:active:border-b-[0px] lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841]"
             href="#portfolio"
           >
             {isWebsiteEnglish &&
@@ -64,7 +64,7 @@ function Hero({ isWebsiteEnglish }) {
                 WEBSITE_LANGUAGES.PORTUGUESE,
                 BR_SECTIONS.PORTFOLIO_BTN,
               )}
-            <span className="group-hover:rotate-90 duration-300 ml-1">
+            <span className="ml-1 duration-300 group-hover:rotate-90">
               <MdOutlineKeyboardArrowRight size={25} />
             </span>
           </a>

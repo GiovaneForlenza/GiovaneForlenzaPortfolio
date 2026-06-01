@@ -11,19 +11,19 @@ function SocialLinks() {
     { name: "Contact", icon: HiOutlineMail, href: "#" },
   ];
   return (
-    <div className="hidden flex-col top-[35%] left-0 fixed lg:flex">
+    <div className="fixed left-0 top-[35%] hidden flex-col lg:flex">
       <ul>
         {links.map((link, id) => {
           return (
             <li
-              className="flex justify-between items-center w-40 h-14 px-4 bg-gradient-to-r from-accent to-primary text-text ml-[-100px] text-lg duration-700 font-semibold  cursor-pointer first:rounded-tr-md last:rounded-br-md hover:rounded-r-md hover:ml-0"
+              className="from-accent to-primary text-text ml-[-100px] flex h-14 w-40 cursor-pointer items-center justify-between bg-gradient-to-r px-4 text-lg font-semibold  duration-700 first:rounded-tr-md last:rounded-br-md hover:ml-0 hover:rounded-r-md"
               key={id}
             >
               <a
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-between items-center w-full text-white"
+                className="flex w-full items-center justify-between text-white"
               >
                 <>
                   {link.name} <link.icon size={30} />

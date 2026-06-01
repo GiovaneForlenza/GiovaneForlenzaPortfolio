@@ -5,19 +5,19 @@ import { BiLinkExternal } from "react-icons/bi";
 function ProjectDetails({ project, id, isWebsiteEnglish }) {
   return (
     <div
-      className={`mt-4 grow-0 lg:mt-0 lg:w-1/3 flex items-start flex-col justify-start ${
+      className={`mt-4 flex grow-0 flex-col items-start justify-start lg:mt-0 lg:w-1/3 ${
         id % 2 === 1 ? "lg:ml-5" : "lg:mr-5"
       }`}
     >
       <div className="sm:mb-4">
-        <h2 className="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+        <h2 className="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           {project.title}
         </h2>
         <div className="mb-2 flex flex-wrap">
           {project.tags.map((tag, id) => {
             return (
               <div
-                className="border-2 border-primary-light dark:border-accent-dark dark:text-white font-semibold px-3 tracking-widest  m-1 rounded-full"
+                className="m-1 rounded-full border-2 border-primary-light px-3 font-semibold tracking-widest  dark:border-accent-dark dark:text-white"
                 key={id}
               >
                 {tag}
@@ -28,7 +28,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
         {project.description.map((text, id) => {
           return (
             <p
-              className="font-light text-gray-500 md:text-lg dark:text-gray-400 mb-2"
+              className="mb-2 font-light text-gray-500 dark:text-gray-400 md:text-lg"
               key={id}
             >
               {text}
@@ -45,7 +45,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
           Live demo
         </a> */}
         <a
-          className="flex items-center button px-4 mr-4 bg-accent-light dark:bg-blue-600 rounded-lg cursor-pointer select-none lg:active:translate-y-1  lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841] lg:active:border-b-[0px] transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:[box-shadow:0_5px_0_0_#1E40AF] border-b-[1px] border-accent-light dark:border-blue-500 text-white text-md"
+          className="button text-md mr-4 flex cursor-pointer select-none items-center rounded-lg border-b-[1px] border-accent-light bg-accent-light  px-4 text-white transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:border-blue-500 dark:bg-blue-600 dark:[box-shadow:0_5px_0_0_#1E40AF] lg:active:translate-y-1 lg:active:border-b-[0px] lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841]"
           href={project.projectLink}
           target="_blank"
         >
@@ -55,7 +55,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
         <a
           href={project.codeLink}
           target="_blank"
-          className="inline-flex items-center px-4 py-2 mb-4 xs:mb-0 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg duration-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+          className="mb-4 inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 duration-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700 xs:mb-0"
         >
           {isWebsiteEnglish && "Code"}
           {!isWebsiteEnglish && "Código"}

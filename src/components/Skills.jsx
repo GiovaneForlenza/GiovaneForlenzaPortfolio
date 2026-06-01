@@ -29,20 +29,20 @@ function Skills({ isWebsiteEnglish }) {
 
   return (
     <div
-      className="pb-20 md:w-full px-3 md:h-screen flex items-center bg-bg-light dark:bg-bg-dark  sm:p-10 sm:py-20"
+      className="flex items-center bg-bg-light px-3 pb-20 dark:bg-bg-dark sm:p-10 sm:py-20  md:h-screen md:w-full"
       name="skills"
       id="skills"
     >
-      <div className="max-w-4xl mx-auto scroll-animation">
+      <div className="scroll-animation mx-auto max-w-4xl">
         <div className="pb-10">
-          <p className="text-text-light text-4xl font-bold inline border-b-4 border-b-accent-light dark:text-text-dark dark:border-b-accent-dark">
+          <p className="inline border-b-4 border-b-accent-light text-4xl font-bold text-text-light dark:border-b-accent-dark dark:text-text-dark">
             Skills
           </p>
         </div>
-        <div className="flex items-center flex-wrap gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           {skillsImgs.map((skill) => {
             return (
-              <div className="w-20 hover:scale-105 transition-all">
+              <div className="w-20 transition-all hover:scale-105">
                 <img src={skill} alt="a" />
               </div>
             );

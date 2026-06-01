@@ -40,8 +40,9 @@ export const PROJECTS_EN = [
   //   photo: schoolManagement,
   // },
 
+  // Todo List
   {
-    title: "Task List",
+    title: "Todo List",
     tags: ["React", "NextJS", "TypeScript", "Local Storage", "Scss"],
     description: [
       "A streamlined task management web app built with Next.js and React, enabling users to create, organize, and store tasks with titles and descriptions. Tasks persist via browser local storage, ensuring data retention between sessions.",
@@ -51,6 +52,8 @@ export const PROJECTS_EN = [
     codeLink: "https://github.com/GiovaneForlenza/todo-list-react-2025",
     photo: taskList,
   },
+
+  // Recipe Menu
   {
     title: "Recipe Menu",
     tags: ["React", "Scss"],
@@ -62,17 +65,19 @@ export const PROJECTS_EN = [
     codeLink: "https://github.com/GiovaneForlenza/recipe-book",
     photo: recipeMenu,
   },
-  {
-    title: "Cocktail Selection",
-    tags: ["React", "Scss", "API"],
-    description: [
-      "Custom cocktail recipe portal built for a client using TheCocktailDB API. Delivers ingredient-based search filters, responsive design, and dynamic content loading.",
-      "Streamlines recipe discovery through RESTful API integration and performance-optimized UI.",
-    ],
-    projectLink: "https://react-project-cocktaildb.netlify.app",
-    codeLink: "https://github.com/GiovaneForlenza/cocktail-db",
-    photo: cocktail,
-  },
+
+  // Cocktail Selection
+  // {
+  //   title: "Cocktail Selection",
+  //   tags: ["React", "Scss", "API"],
+  //   description: [
+  //     "Custom cocktail recipe portal built for a client using TheCocktailDB API. Delivers ingredient-based search filters, responsive design, and dynamic content loading.",
+  //     "Streamlines recipe discovery through RESTful API integration and performance-optimized UI.",
+  //   ],
+  //   projectLink: "https://react-project-cocktaildb.netlify.app",
+  //   codeLink: "https://github.com/GiovaneForlenza/cocktail-db",
+  //   photo: cocktail,
+  // },
 ];
 
 export const PROJECTS_BR = [

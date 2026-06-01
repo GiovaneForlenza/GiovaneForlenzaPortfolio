@@ -14,19 +14,18 @@ import "../../scroll-animation.css";
 function Portfolio({ isWebsiteEnglish }) {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    if (isWebsiteEnglish) setProjects(PROJECTS_EN);
-    else setProjects(PROJECTS_BR);
+    isWebsiteEnglish ? setProjects(PROJECTS_EN) : setProjects(PROJECTS_BR);
   }, [isWebsiteEnglish]);
 
   return (
     <div
-      className="w-full px-3 py-8 flex items-center bg-bg-light  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:p-10 sm:py-20"
+      className="flex w-full items-center bg-bg-light px-3 py-8  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:p-10 sm:py-20"
       name="portfolio"
       id="portfolio"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto max-w-6xl">
         <div className="scroll-animation">
-          <p className="text-4xl font-bold inline border-b-4 border-b-accent-light dark:border-b-accent-dark ">
+          <p className="inline border-b-4 border-b-accent-light text-4xl font-bold dark:border-b-accent-dark ">
             {isWebsiteEnglish
               ? getTitleFromScript(
                   WEBSITE_LANGUAGES.ENGLISH,
@@ -37,7 +36,7 @@ function Portfolio({ isWebsiteEnglish }) {
                   BR_SECTIONS.PORTFOLIO,
                 )}
           </p>
-          <p className="text-xl my-8 ">
+          <p className="my-8 text-xl ">
             {isWebsiteEnglish
               ? getTextFromScript(
                   WEBSITE_LANGUAGES.ENGLISH,
@@ -52,11 +51,11 @@ function Portfolio({ isWebsiteEnglish }) {
         {projects.map((project, id) => {
           return (
             <section
-              className="scroll-animation bg-white dark:bg-gray-900 my-10 rounded-md border dark:border-none border-gray-300"
+              className="scroll-animation my-10 rounded-md border border-gray-300 bg-white dark:border-none dark:bg-gray-900"
               key={id}
             >
               <div
-                className={`flex flex-col py-4 px-4 mx-auto max-w-screen-xl lg:flex-row  shadow-sm  ${
+                className={`mx-auto flex max-w-screen-xl flex-col px-4 py-4 shadow-sm  lg:flex-row  ${
                   id % 2 === 0 && "lg:flex-row-reverse"
                 }`}
               >

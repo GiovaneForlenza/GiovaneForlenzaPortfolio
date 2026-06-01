@@ -5,7 +5,7 @@ function NavBarLinks({ links, linkId }) {
   links.map((link, id) => {
     return (
       <a
-        className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 mx-2 hover:text-white"
+        className="mx-2 cursor-pointer px-4 font-medium capitalize text-gray-500 duration-200 hover:scale-105 hover:text-white"
         key={id}
         href={namesOfSectionsIds[linkId]}
       >
