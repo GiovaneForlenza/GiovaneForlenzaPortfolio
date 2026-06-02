@@ -66,6 +66,19 @@ export const PROJECTS_EN = [
     photo: recipeMenu,
   },
 
+  // Recipe Menu
+  {
+    title: "Recipe Menu",
+    tags: ["React", "Scss"],
+    description: [
+      "The idea for this project came to me when I didn't know what to cook, and I thought 'Wouldn't it be cool if I had my own recipes menu?'",
+      "And the rest is history.",
+    ],
+    projectLink: "https://recepie-book.netlify.app",
+    codeLink: "https://github.com/GiovaneForlenza/recipe-book",
+    photo: recipeMenu,
+  },
+
   // Cocktail Selection
   // {
   //   title: "Cocktail Selection",
