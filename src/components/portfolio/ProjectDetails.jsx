@@ -11,7 +11,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
     >
       <div className="sm:mb-4">
         <h2 className="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          {project.title}
+          {isWebsiteEnglish ? project.en_title : project.br_title}
         </h2>
         <div className="mb-2 flex flex-wrap">
           {project.tags.map((tag, id) => {
@@ -25,16 +25,27 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
             );
           })}
         </div>
-        {project.description.map((text, id) => {
-          return (
-            <p
-              className="mb-2 font-light text-gray-500 dark:text-gray-400 md:text-lg"
-              key={id}
-            >
-              {text}
-            </p>
-          );
-        })}
+        {isWebsiteEnglish
+          ? project.en_description.map((text, id) => {
+              return (
+                <p
+                  className="mb-2 font-light text-gray-500 dark:text-gray-400 md:text-lg"
+                  key={id}
+                >
+                  {text}
+                </p>
+              );
+            })
+          : project.br_description.map((text, id) => {
+              return (
+                <p
+                  className="mb-2 font-light text-gray-500 dark:text-gray-400 md:text-lg"
+                  key={id}
+                >
+                  {text}
+                </p>
+              );
+            })}
       </div>
       <div className="flex">
         {/* <a
@@ -57,8 +68,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
           target="_blank"
           className="mb-4 inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 duration-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700 xs:mb-0"
         >
-          {isWebsiteEnglish && "Code"}
-          {!isWebsiteEnglish && "Código"}
+          {isWebsiteEnglish ? "Code" : "Código"}
           <BsGithub size={20} className="ml-3" />
         </a>
       </div>

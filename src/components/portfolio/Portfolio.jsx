@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { PROJECTS_BR, PROJECTS_EN } from "./PortfolioProjects";
+import { PROJECTS } from "./PortfolioProjects";
 import ProjectDetails from "./ProjectDetails";
 import {
   BR_SECTIONS,
@@ -12,10 +12,10 @@ import {
 import "../../scroll-animation.css";
 
 function Portfolio({ isWebsiteEnglish }) {
-  const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    isWebsiteEnglish ? setProjects(PROJECTS_EN) : setProjects(PROJECTS_BR);
-  }, [isWebsiteEnglish]);
+  const [projects, setProjects] = useState(PROJECTS);
+  // useEffect(() => {
+  //   isWebsiteEnglish ? setProjects(PROJECTS) : setProjects(PROJECTS_BR);
+  // }, [isWebsiteEnglish]);
 
   return (
     <div
@@ -70,7 +70,7 @@ function Portfolio({ isWebsiteEnglish }) {
                 </div>
                 <ProjectDetails
                   project={project}
-                  id={id}
+                  id={id + 10}
                   isWebsiteEnglish={isWebsiteEnglish}
                 />
               </div>

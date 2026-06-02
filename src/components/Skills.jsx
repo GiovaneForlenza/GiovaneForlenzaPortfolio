@@ -23,9 +23,9 @@ function Skills({ isWebsiteEnglish }) {
     js,
   ];
 
-  useEffect(() => {
-    console.log(skillsImgs);
-  }, []);
+  // useEffect(() => {
+  //   console.log(skillsImgs);
+  // }, []);
 
   return (
     <div
