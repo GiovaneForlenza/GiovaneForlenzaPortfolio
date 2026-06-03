@@ -7,6 +7,25 @@ import taskList from "../../assets/portfolio/taskListMockup.png";
 import shopHub from "../../assets/portfolio/ecommerceShopHub.jpg";
 
 export const PROJECTS = [
+  // ShopHub Ecommerce
+  {
+    en_title: "ShopHub Ecommerce",
+    br_title: "ShopHub Ecommerce",
+    tags: ["React", "Local Storage"],
+    en_description: [
+      "An e-commerce product listing page built with React, displaying products with individual detail pages containing user reviews, comments, and ratings.",
+      "Cart data persists via browser local storage, ensuring items remain saved between sessions without a backend.",
+      "Upon purchase, users are redirected to a purchase summary page, confirming order details and completing the checkout flow.",
+    ],
+    br_description: [
+      "Uma página de listagem de produtos de e-commerce construída com React, exibindo produtos com páginas de detalhe individuais contendo avaliações, comentários e classificações dos usuários.",
+      "Os dados do carrinho persistem via local storage do navegador, garantindo que os itens permaneçam salvos entre sessões sem necessidade de backend.",
+      "Ao finalizar a compra, o usuário é redirecionado para uma página de resumo do pedido, confirmando os detalhes da compra e completando o fluxo de checkout.",
+    ],
+    projectLink: "https://shophub-ecommerce-eight.vercel.app/",
+    codeLink: "https://github.com/GiovaneForlenza/ecommerce",
+    photo: shopHub,
+  },
   // Weather Forecast
   // {
   //   en_title: "Weather forecast",
@@ -92,25 +111,7 @@ export const PROJECTS = [
     codeLink: "https://github.com/GiovaneForlenza/recipe-book",
     photo: recipeMenu,
   },
-  // ShopHub Ecommerce
-  {
-    en_title: "ShopHub Ecommerce",
-    br_title: "ShopHub Ecommerce",
-    tags: ["React", "Local Storage"],
-    en_description: [
-      "An e-commerce product listing page built with React, displaying products with individual detail pages containing user reviews, comments, and ratings.",
-      "Cart data persists via browser local storage, ensuring items remain saved between sessions without a backend.",
-      "Upon purchase, users are redirected to a purchase summary page, confirming order details and completing the checkout flow.",
-    ],
-    br_description: [
-      "Uma página de listagem de produtos de e-commerce construída com React, exibindo produtos com páginas de detalhe individuais contendo avaliações, comentários e classificações dos usuários.",
-      "Os dados do carrinho persistem via local storage do navegador, garantindo que os itens permaneçam salvos entre sessões sem necessidade de backend.",
-      "Ao finalizar a compra, o usuário é redirecionado para uma página de resumo do pedido, confirmando os detalhes da compra e completando o fluxo de checkout.",
-    ],
-    projectLink: "https://recepie-book.netlify.app",
-    codeLink: "https://github.com/GiovaneForlenza/recipe-book",
-    photo: shopHub,
-  },
+
   // Cocktail Selection
   // {
   //   en_title: "Cocktail Selection",
