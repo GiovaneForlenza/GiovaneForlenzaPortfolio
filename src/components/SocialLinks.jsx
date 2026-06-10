@@ -1,7 +1,6 @@
-import React from "react";
+import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsPersonLinesFill } from "react-icons/bs";
 
 function SocialLinks() {
   const links = [

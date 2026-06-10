@@ -1,31 +1,24 @@
-import React, { useEffect, useState } from "react";
-import "../scroll-animation.css";
 import css from "../assets/skills/css.png";
 import html from "../assets/skills/html.png";
 import js from "../assets/skills/javascript.png";
-import nextjs from "../assets/skills/nextjs.png";
-import node from "../assets/skills/node.png";
 import react from "../assets/skills/react.png";
 import sass from "../assets/skills/sass.png";
 import tailwind from "../assets/skills/tailwind.png";
 import typescript from "../assets/skills/typescript.png";
+import "../scroll-animation.css";
 
 function Skills({ isWebsiteEnglish }) {
   const skillsImgs = [
     react,
     typescript,
-    nextjs,
+    // nextjs,
     tailwind,
     sass,
-    node,
+    // node,
     html,
     css,
     js,
   ];
-
-  // useEffect(() => {
-  //   console.log(skillsImgs);
-  // }, []);
 
   return (
     <div
@@ -40,10 +33,10 @@ function Skills({ isWebsiteEnglish }) {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-4">
-          {skillsImgs.map((skill) => {
+          {skillsImgs.map((skill, idx) => {
             return (
               <div className="w-20 transition-all hover:scale-105">
-                <img src={skill} alt="a" />
+                <img src={skill} alt="a" key={idx} />
               </div>
             );
           })}

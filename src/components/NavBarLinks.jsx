@@ -1,5 +1,3 @@
-import React from "react";
-
 function NavBarLinks({ links, linkId }) {
   const namesOfSectionsIds = ["#home", "#about", "#skills", "#portfolio"];
   links.map((link, id) => {

@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { PROJECTS } from "./PortfolioProjects";
-import ProjectDetails from "./ProjectDetails";
+import { useState } from "react";
 import {
   BR_SECTIONS,
   ENGLISH_SECTIONS,
@@ -8,18 +6,17 @@ import {
   getTextFromScript,
   getTitleFromScript,
 } from "../WebsiteTexts";
+import { PROJECTS } from "./PortfolioProjects";
+import ProjectDetails from "./ProjectDetails";
 
 import "../../scroll-animation.css";
 
 function Portfolio({ isWebsiteEnglish }) {
   const [projects, setProjects] = useState(PROJECTS);
-  // useEffect(() => {
-  //   isWebsiteEnglish ? setProjects(PROJECTS) : setProjects(PROJECTS_BR);
-  // }, [isWebsiteEnglish]);
 
   return (
     <div
-      className="flex w-full items-center bg-bg-light px-3 py-8  dark:bg-gradient-to-b dark:from-bg-dark dark:to-secondary-dark   sm:p-10 sm:py-20"
+      className="sm:py-30 flex w-full items-center  bg-bg-light  px-3 py-8 dark:bg-gradient-to-b   dark:from-bg-dark dark:to-secondary-dark sm:p-10"
       name="portfolio"
       id="portfolio"
     >
@@ -55,11 +52,11 @@ function Portfolio({ isWebsiteEnglish }) {
               key={id}
             >
               <div
-                className={`mx-auto flex max-w-screen-xl flex-col px-4 py-4 shadow-sm  lg:flex-row  ${
+                className={`mx-auto flex max-w-screen-xl flex-col px-4 py-6 shadow-sm  lg:flex-row  ${
                   id % 2 === 0 && "lg:flex-row-reverse"
                 }`}
               >
-                <div className="mt-4 lg:mt-0 lg:w-2/3">
+                <div className="mt-4 lg:mt-0 lg:w-2/4">
                   <a href={project.projectLink} target="_blank">
                     <img
                       className=" rounded-md"

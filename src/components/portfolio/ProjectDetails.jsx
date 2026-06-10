@@ -1,11 +1,9 @@
-import React from "react";
-
-import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
 function ProjectDetails({ project, id, isWebsiteEnglish }) {
   return (
     <div
-      className={`mt-4 flex grow-0 flex-col items-start justify-start lg:mt-0 lg:w-1/3 ${
+      className={`mt-4 flex grow-0 flex-col items-start justify-start lg:mt-0 lg:w-2/4 ${
         id % 2 === 1 ? "lg:ml-5" : "lg:mr-5"
       }`}
     >
@@ -47,7 +45,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
               );
             })}
       </div>
-      <div className="flex">
+      <div className="mt-4 flex w-full flex-col sm:mt-0 sm:flex-row">
         {/* <a
           href={project.projectLink}
           target="_blank"
@@ -56,21 +54,23 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
           Live demo
         </a> */}
         <a
-          className="button text-md mr-4 flex cursor-pointer select-none items-center rounded-lg border-b-[1px] border-accent-light bg-accent-light  px-4 text-white transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:border-blue-500 dark:bg-blue-600 dark:[box-shadow:0_5px_0_0_#1E40AF] lg:active:translate-y-1 lg:active:border-b-[0px] lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841]"
+          className="button text-md mb-4 mr-4 flex cursor-pointer select-none items-center rounded-lg border-b-[1px] border-accent-light  bg-accent-light px-4 py-2 text-white transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:border-blue-500 dark:bg-blue-600 dark:[box-shadow:0_5px_0_0_#1E40AF] sm:mb-0 lg:active:translate-y-1 lg:active:border-b-[0px] lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841]"
           href={project.projectLink}
           target="_blank"
         >
           Live demo
           <BiLinkExternal size={20} className="ml-3" />
         </a>
-        <a
-          href={project.codeLink}
-          target="_blank"
-          className="mb-4 inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 duration-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700 xs:mb-0"
-        >
-          {isWebsiteEnglish ? "Code" : "Código"}
-          <BsGithub size={20} className="ml-3" />
-        </a>
+        {project.codeLink && (
+          <a
+            href={project.codeLink}
+            target="_blank"
+            className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 duration-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700 xs:mb-0"
+          >
+            {isWebsiteEnglish ? "Code" : "Código"}
+            <BsGithub size={20} className="ml-3" />
+          </a>
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import {
   BR_SECTIONS,
@@ -61,7 +61,6 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
               <a
                 className="mx-2 cursor-pointer px-4  font-semibold capitalize duration-200 hover:scale-105 hover:text-accent-light dark:hover:text-accent-dark"
                 key={id}
-                linkId={id}
                 href={namesOfSectionsIds[id]}
               >
                 {link}
@@ -94,7 +93,6 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
           {isNavOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
         </div>
       </div>
-
       {isNavOpen && (
         <ul className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-bg-light text-text-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:text-text-dark lg:hidden">
           {links.map((link, id) => {
@@ -123,8 +121,6 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
             <button
               className="mb p-2  text-lg font-semibold"
               onClick={() => setIsWebsiteEnglish(!isWebsiteEnglish)}
-              // data-tooltip-id="language-tooltip"
-              // data-tooltip-content="Change the website language (BR or EN)"
             >
               {isWebsiteEnglish ? "PT-BR" : "EN"}
             </button>

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import {
   BR_SECTIONS,
   ENGLISH_SECTIONS,
-  TEXT_ENGLISH,
   WEBSITE_LANGUAGES,
   getTextFromScript,
 } from "./WebsiteTexts";

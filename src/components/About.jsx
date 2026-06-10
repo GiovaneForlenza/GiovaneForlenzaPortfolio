@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import "../scroll-animation.css";
 import {
   BR_SECTIONS,
   ENGLISH_SECTIONS,
@@ -6,7 +7,6 @@ import {
   getTextFromScript,
   getTitleFromScript,
 } from "./WebsiteTexts";
-import "../scroll-animation.css";
 
 function About({ isWebsiteEnglish }) {
   const [arrayText, setArrayText] = useState([]);
