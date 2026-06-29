@@ -7,6 +7,7 @@ import {
   getTextFromScript,
 } from "./WebsiteTexts";
 
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 function Hero({ isWebsiteEnglish }) {
   const [heroText, setHeroText] = useState(null);
 
@@ -48,7 +49,7 @@ function Hero({ isWebsiteEnglish }) {
               </p>
             );
           })}
-        <div className="mt-5 flex items-center justify-center md:justify-start">
+        <div className="mt-5 flex items-stretch justify-start md:justify-start">
           <a
             className="button text-md group mr-4 flex cursor-pointer select-none items-center rounded-lg border-b-[1px] border-accent-light bg-accent-light px-5  py-3 text-white transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:border-blue-500 dark:bg-blue-600 dark:[box-shadow:0_5px_0_0_#1E40AF] lg:active:translate-y-1 lg:active:border-b-[0px] lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841]"
             href="#portfolio"
@@ -67,6 +68,24 @@ function Hero({ isWebsiteEnglish }) {
               <MdOutlineKeyboardArrowRight size={25} />
             </span>
           </a>
+          <div className="flex flex-row gap-4">
+            <a
+              href="https://github.com/GiovaneForlenza"
+              target="_blank"
+              className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 duration-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700 xs:mb-0"
+            >
+              Github
+              <BsGithub size={20} className="ml-3" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/giovane-forlenza/"
+              target="_blank"
+              className="inline-flex items-center rounded-lg border border-blue-100 bg-white px-4 py-2 text-center text-sm font-medium text-blue-900 duration-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-blue-400 dark:bg-blue-700 dark:text-white dark:hover:border-blue-600 dark:hover:bg-blue-600 dark:focus:ring-blue-700 xs:mb-0"
+            >
+              Linkedin
+              <BsLinkedin size={20} className="ml-3" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

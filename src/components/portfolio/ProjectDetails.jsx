@@ -15,7 +15,7 @@ function ProjectDetails({ project, id, isWebsiteEnglish }) {
           {project.tags.map((tag, id) => {
             return (
               <div
-                className="m-1 rounded-full border-2 border-primary-light px-3 font-semibold tracking-widest  dark:border-accent-dark dark:text-white"
+                className="m-1 rounded-full border-2 border-primary-light px-2 text-xs tracking-widest  dark:border-accent-dark dark:text-white"
                 key={id}
               >
                 {tag}

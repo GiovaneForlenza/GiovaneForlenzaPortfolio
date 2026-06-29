@@ -1,10 +1,29 @@
 import austinMovingCo from "../../assets/portfolio/austinMovingCo.jpg";
 import confrariaDoInvestidor from "../../assets/portfolio/confrariaDoInvestidor.png";
 import shopHub from "../../assets/portfolio/ecommerceShopHub.jpg";
+import projectFeedback from "../../assets/portfolio/projectFeedback.png";
 import recipeMenu from "../../assets/portfolio/recipeBook.jpg";
 import taskList from "../../assets/portfolio/taskList.png";
 
 export const PROJECTS = [
+  // Project Feedback
+  {
+    en_title: "Project Feedback",
+    br_title: "Project Feedback",
+    tags: ["React", "Redux", "Tailwind"],
+    en_description: [
+      "Project Feedback is a React-based dashboard developed to manage and organize product feedback submissions. Built with Redux for consistent state management and Tailwind CSS for styling, the application allows users to create, read, update, and delete feedback entries through a fully functional CRUD modal, while React Hooks power dynamic filtering and sorting of feedback items.",
+      "The project also includes a dedicated details page featuring live-updating comments, allowing users to engage in real-time discussions around each piece of feedback. The architecture emphasizes predictable state handling, reusable components, and a clean, responsive interface, demonstrating practical application of modern front-end development practices.",
+    ],
+    br_description: [
+      "Project Feedback é um dashboard baseado em React desenvolvido para gerenciar e organizar o envio de feedbacks de produtos. Construído com Redux para garantir consistência no gerenciamento de estado e Tailwind CSS para a estilização, o aplicativo permite que os usuários criem, visualizem, atualizem e excluam feedbacks por meio de um modal CRUD totalmente funcional, enquanto React Hooks possibilitam a filtragem e ordenação dinâmica dos itens de feedback.",
+      "O projeto também inclui uma página de detalhes dedicada, com comentários atualizados em tempo real, permitindo que os usuários participem de discussões em tempo real sobre cada feedback. A arquitetura enfatiza um gerenciamento de estado previsível, componentes reutilizáveis e uma interface limpa e responsiva, demonstrando a aplicação prática de práticas modernas de desenvolvimento front-end.",
+    ],
+    projectLink: "https://gff-project-feedback.vercel.app/",
+    codeLink: "https://github.com/GiovaneForlenza/project-feedback",
+    photo: projectFeedback,
+  },
+
   // ShopHub Ecommerce
   {
     en_title: "ShopHub Ecommerce",
