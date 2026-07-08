@@ -16,8 +16,8 @@ export const PROJECTS = [
       "The project also includes a dedicated details page featuring live-updating comments, allowing users to engage in real-time discussions around each piece of feedback. The architecture emphasizes predictable state handling, reusable components, and a clean, responsive interface, demonstrating practical application of modern front-end development practices.",
     ],
     br_description: [
-      "Project Feedback é um dashboard baseado em React desenvolvido para gerenciar e organizar o envio de feedbacks de produtos. Construído com Redux para garantir consistência no gerenciamento de estado e Tailwind CSS para a estilização, o aplicativo permite que os usuários criem, visualizem, atualizem e excluam feedbacks por meio de um modal CRUD totalmente funcional, enquanto React Hooks possibilitam a filtragem e ordenação dinâmica dos itens de feedback.",
-      "O projeto também inclui uma página de detalhes dedicada, com comentários atualizados em tempo real, permitindo que os usuários participem de discussões em tempo real sobre cada feedback. A arquitetura enfatiza um gerenciamento de estado previsível, componentes reutilizáveis e uma interface limpa e responsiva, demonstrando a aplicação prática de práticas modernas de desenvolvimento front-end.",
+      "Project Feedback é um dashboard baseado em React desenvolvido para gerenciar e organizar o envio de feedbacks de produtos. Construído com Redux para garantir consistência no gerenciamento de estado e Tailwind CSS para a estilização, o aplicativo permite que os usuários criem, visualizem, atualizem e excluam feedbacks por meio de um modal CRUD totalmente functional, enquanto React Hooks possibilitam a filtragem e ordenação dinâmica dos items de feedback.",
+      "O projeto também inclui uma página de detalhes dedicada, com comentários atualizados em tempo real, permitindo que os usuários participem de discussões em tempo real sobre cada feedback. A arquitetura enfatiza um gerenciamento de estado previsível, components reutilizáveis e uma interface limpa e responsiva, demonstrando a aplicação prática de práticas modernas de desenvolvimento front-end.",
     ],
     projectLink: "https://gff-project-feedback.vercel.app/",
     codeLink: "https://github.com/GiovaneForlenza/project-feedback",
@@ -34,8 +34,8 @@ export const PROJECTS = [
       "The project focuses on scalable state management, reusable component architecture, and Local Storage integration to preserve user interactions and cart information. Every interface element, product card, and reusable component was designed and implemented from the ground up to create a realistic and responsive user experience.",
     ],
     br_description: [
-      "ShopHub é um projeto de demonstração de e-commerce criado com React, desenvolvido para aprimorar conceitos avançados de gerenciamento de estado e comunicação entre componentes. Construído do zero usando React, TypeScript e práticas modernas de front-end, o aplicativo simula uma experiência de compra completa, mantendo os dados sincronizados em várias páginas e componentes..",
-      "O projeto foca na gestão de estado escalável, arquitetura de componentes reutilizáveis ​e integração com armazenamento local para preservar as interações do utilizador e as informações do carrinho de compras. Cada elemento da interface, card de produto e componente reutilizável foi construído e implementado para criar uma experiência de realista e responsiva.",
+      "ShopHub é um projeto de demonstração de e-commerce criado com React, desenvolvido para aprimorar conceitos avançados de gerenciamento de estado e comunicação entre components. Construído do zero usando React, TypeScript e práticas modernas de front-end, o aplicativo simula uma experiência de compra completa, mantendo os dados sincronizados em várias páginas e components..",
+      "O projeto foca na gestão de estado escalável, arquitetura de components reutilizáveis ​e integração com armazenamento local para preservar as interações do utilizador e as informações do carrinho de compras. Cada elemento da interface, card de produto e componente reutilizável foi construído e implementado para criar uma experiência de realista e responsiva.",
     ],
     projectLink: "https://gff-shophub-ecommerce.vercel.app/",
     codeLink: "https://github.com/GiovaneForlenza/ShopHub",
