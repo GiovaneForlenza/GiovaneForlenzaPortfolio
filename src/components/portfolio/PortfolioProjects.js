@@ -2,10 +2,29 @@ import austinMovingCo from "../../assets/portfolio/austinMovingCo.jpg";
 import confrariaDoInvestidor from "../../assets/portfolio/confrariaDoInvestidor.png";
 import shopHub from "../../assets/portfolio/ecommerceShopHub.jpg";
 import projectFeedback from "../../assets/portfolio/projectFeedback.png";
+import realters from "../../assets/portfolio/realters.png";
 import recipeMenu from "../../assets/portfolio/recipeBook.jpg";
 import taskList from "../../assets/portfolio/taskList.png";
 
 export const PROJECTS = [
+  // Realters website
+  {
+    en_title: "Realters",
+    br_title: "Realters",
+    tags: ["React", "Tailwind", "Next.JS"],
+    en_description: [
+      "Realter is a React-based real estate listing platform designed to showcase residential properties with curated imagery and comprehensive property information. Built with React and TailwindCSS, the application allows users to browse through featured homes, view high-quality property photos, and access detailed specifications including square footage, number of bedrooms and bathrooms, location, and pricing information through an intuitive, filterable listing interface.",
+      "The project also includes dedicated property detail pages featuring interactive image galleries and complete property descriptions, enabling users to explore each listing in depth before making informed decisions. The architecture emphasizes responsive design, component reusability, and seamless navigation, demonstrating practical application of modern front-end development practices in a real-world real estate context.",
+    ],
+    br_description: [
+      "Realter é uma plataforma de listagem de imóveis desenvolvida com React, projetada para exibir propriedades residenciais com imagens selecionadas e informações detalhadas. Construída com React e TailwindCSS, a aplicação permite que usuários naveguem por imóveis em destaque, visualizem fotos de alta qualidade e acessem especificações completas, incluindo metragem, número de quartos e banheiros, localização e informações de preço por meio de uma interface de listagem intuitiva e filtrável.",
+      "O projeto também conta com páginas de detalhes das propriedades, apresentando galerias de imagens interativas e descrições completas de cada imóvel, permitindo que os usuários explorem cada listagem em profundidade antes de tomar decisões informadas. A arquitetura prioriza design responsivo, reutilização de componentes e navegação fluida, demonstrando a aplicação prática de práticas modernas de desenvolvimento front-end no contexto do mercado imobiliário.",
+    ],
+    projectLink: "https://gff-realters.vercel.app/",
+    codeLink: "https://github.com/GiovaneForlenza/Realters",
+    photo: realters,
+  },
+
   // Project Feedback
   {
     en_title: "Project Feedback",
