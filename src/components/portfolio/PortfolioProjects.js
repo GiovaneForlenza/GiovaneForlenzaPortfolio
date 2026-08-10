@@ -9,8 +9,8 @@ import taskList from "../../assets/portfolio/taskList.png";
 export const PROJECTS = [
   // Grocery List website
   {
-    en_title: "Realters",
-    br_title: "Realters",
+    en_title: "Grocery List",
+    br_title: "Lista de compras",
     tags: ["React", "Tailwind", "Supabase DB"],
     en_description: [
       "GroceryList is a React-based grocery management application developed to help users organize and track their shopping items in real time. Built with React, Supabase for cloud-based data persistence, and Tailwind CSS for styling, the application allows users to create, edit, delete, and mark items as purchased through an intuitive interface, while real-time database synchronization ensures seamless updates across all devices.",
@@ -20,7 +20,7 @@ export const PROJECTS = [
       "GroceryList é uma aplicação de gerenciamento de compras desenvolvida com React, projetada para ajudar usuários a organizar e acompanhar seus itens de mercado em tempo real. Construída com React, Supabase para persistência de dados em nuvem e Tailwind CSS para estilização, a aplicação permite que usuários criem, editem, excluam e marquem itens como comprados por meio de uma interface intuitiva, enquanto a sincronização em tempo real com o banco de dados garante atualizações contínuas em todos os dispositivos.",
       "O projeto também conta com uma barra de pesquisa e um sistema de filtros dinâmicos, permitindo que os usuários localizem rapidamente itens por nome, categoria ou status de compra. Funcionalidades adicionais incluem gerenciamento de quantidades e ordenação automática da lista para melhor organização. A arquitetura prioriza fluxo de dados em tempo real, reutilização de componentes e design responsivo.",
     ],
-    projectLink: "https://gff-grocery.vercel.app/",
+    projectLink: "https://gff-grocery-list.vercel.app/",
     codeLink: "https://github.com/GiovaneForlenza/grocery-list",
     photo: realters,
   },
