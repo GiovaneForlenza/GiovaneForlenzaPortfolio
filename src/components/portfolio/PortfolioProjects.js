@@ -5,8 +5,27 @@ import projectFeedback from "../../assets/portfolio/projectFeedback.png";
 import realters from "../../assets/portfolio/realters.png";
 import recipeMenu from "../../assets/portfolio/recipeBook.jpg";
 import taskList from "../../assets/portfolio/taskList.png";
+import noteflow from "../../assets/portfolio/noteflow.png";
 
 export const PROJECTS = [
+  // Note taking app
+  {
+    en_title: "NoteFlow",
+    br_title: "NoteFlow",
+    tags: ["React", "Tailwind", "Next.JS", "Local storage"],
+    en_description: [
+      "NoteFlow is a React-based note-taking application developed to help users capture, organize, and manage their thoughts with flexibility and efficiency. Built with React, Local Storage for client-side data persistence, and Tailwind for styling, the application allows users to create, read, update, and delete notes through a fully functional CRUD interface, while a rich text editor enables text formatting including bold, underline, and highlight for enhanced note expression.",
+      "The project also includes a custom tagging system for note categorization, a search bar for quick content discovery, and an informative stats header displaying total notes, tags in use, the most frequently used tag, and the timestamp of the last entry. Additional features include real-time filtering by tags and dynamic content updates, providing users with a comprehensive overview of their note-taking activity. The architecture emphasizes modular component design, responsive layout, and intuitive user experience, demonstrating practical application of modern front-end development practices.",
+    ],
+    br_description: [
+      "NoteFlow é uma aplicação de anotações desenvolvida com React, criada para ajudar usuários a capturar, organizar e gerenciar seus pensamentos com flexibilidade e eficiência. Construída com React, Local Storage para persistência de dados no lado do cliente e Tailwind para estilização, a aplicação permite que usuários criem, leiam, atualizem e excluam anotações por meio de uma interface CRUD totalmente funcional, enquanto um editor de texto possibilita formatação com negrito, sublinhado e grifar o texto para maior expressividade nas anotações.",
+      "O projeto também conta com um sistema de tags personalizadas para categorização das anotações, uma barra de pesquisa para pesquisa rápida de conteúdo e um cabeçalho informativo com estatísticas que exibe total de anotações, tags em uso, a tag mais utilizada e o horário da última entrada. Funcionalidades adicionais incluem filtragem em tempo real por tags e atualizações dinâmicas de conteúdo, proporcionando aos usuários uma visão abrangente de sua atividade de anotações. A arquitetura prioriza design modular de componentes, layout responsivo e experiência intuitiva, demonstrando a aplicação prática de práticas modernas de desenvolvimento front-end.",
+    ],
+    projectLink: "https://gff-note-taking.vercel.app/",
+    codeLink: "https://github.com/GiovaneForlenza/Note-taking-app",
+    photo: noteflow,
+  },
+
   // Grocery List website
   // Text is ready, gotta upload the images in the db and take the screenshots
   // {
