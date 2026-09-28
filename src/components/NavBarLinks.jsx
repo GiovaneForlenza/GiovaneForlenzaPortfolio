@@ -7,7 +7,7 @@ function NavBarLinks({ links, linkId }) {
         key={id}
         href={namesOfSectionsIds[linkId]}
       >
-        a{link}
+        {link}
       </a>
     );
   });
