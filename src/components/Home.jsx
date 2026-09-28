@@ -1,19 +1,18 @@
 import About from "./About";
+import Contact from "./Contact";
 import Hero from "./Hero";
 import Portfolio from "./portfolio/Portfolio";
 import Skills from "./Skills";
 
-function Home({ isWebsiteEnglish, setIsWebsiteEnglish }) {
+function Home({ isWebsiteEnglish }) {
   return (
-    <div
-      name="home"
-      className="h-screen w-full text-text-light dark:text-text-dark "
-    >
+    <main className="w-full text-body">
       <Hero isWebsiteEnglish={isWebsiteEnglish} />
       <About isWebsiteEnglish={isWebsiteEnglish} />
-      <Skills />
+      <Skills isWebsiteEnglish={isWebsiteEnglish} />
       <Portfolio isWebsiteEnglish={isWebsiteEnglish} />
-    </div>
+      <Contact isWebsiteEnglish={isWebsiteEnglish} />
+    </main>
   );
 }
 
