@@ -11,7 +11,7 @@ function Contact({ isWebsiteEnglish }) {
     <section id="contact" className="bg-brand-600 text-white">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-24">
         <div className="grid items-center  lg:grid-cols-[1.4fr_1fr]">
-          <div className="border">
+          <div className="">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
               {heading}
             </h2>
@@ -19,7 +19,7 @@ function Contact({ isWebsiteEnglish }) {
               {body}
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 border lg:justify-end">
+          <div className="flex flex-wrap gap-3  lg:justify-end">
             <a
               href="https://www.linkedin.com/in/giovane-forlenza/"
               target="_blank"
