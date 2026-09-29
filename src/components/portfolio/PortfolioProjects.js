@@ -8,42 +8,22 @@ import taskList from "../../assets/portfolio/taskList.png";
 import noteflow from "../../assets/portfolio/noteflow.png";
 
 export const PROJECTS = [
-  // Note taking app
+  // Austin Moving Co.
   {
-    en_title: "NoteFlow",
-    br_title: "NoteFlow",
-    tags: ["React", "Tailwind", "Next.JS", "Local storage"],
+    en_title: "Austin Moving Co.",
+    br_title: "Austin Moving Co.",
+    tags: ["Wordpress", "Gutenberg Blocks", "Custom CSS"],
     en_description: [
-      "NoteFlow is a React-based note-taking application developed to help users capture, organize, and manage their thoughts with flexibility and efficiency. Built with React, Local Storage for client-side data persistence, and Tailwind for styling, the application allows users to create, read, update, and delete notes through a fully functional CRUD interface, while a rich text editor enables text formatting including bold, underline, and highlight for enhanced note expression.",
-      "The project also includes a custom tagging system for note categorization, a search bar for quick content discovery, and an informative stats header displaying total notes, tags in use, the most frequently used tag, and the timestamp of the last entry. Additional features include real-time filtering by tags and dynamic content updates, providing users with a comprehensive overview of their note-taking activity. The architecture emphasizes modular component design, responsive layout, and intuitive user experience, demonstrating practical application of modern front-end development practices.",
+      "Austin Moving Company is a professional business website developed for a moving services company based in Texas. Built from scratch using WordPress and Gutenberg blocks, the website includes service area pages, custom layouts, a blog system, and dynamic content structures designed to support marketing and SEO efforts.",
+      "The project involved close collaboration with another developer and direct communication with the client to gather requirements, clarify business needs, and ensure successful project delivery. The result is a scalable and user-friendly website that effectively presents the company's services while providing a solid foundation for future content growth.",
     ],
     br_description: [
-      "NoteFlow é uma aplicação de anotações desenvolvida com React, criada para ajudar usuários a capturar, organizar e gerenciar seus pensamentos com flexibilidade e eficiência. Construída com React, Local Storage para persistência de dados no lado do cliente e Tailwind para estilização, a aplicação permite que usuários criem, leiam, atualizem e excluam anotações por meio de uma interface CRUD totalmente funcional, enquanto um editor de texto possibilita formatação com negrito, sublinhado e grifar o texto para maior expressividade nas anotações.",
-      "O projeto também conta com um sistema de tags personalizadas para categorização das anotações, uma barra de pesquisa para pesquisa rápida de conteúdo e um cabeçalho informativo com estatísticas que exibe total de anotações, tags em uso, a tag mais utilizada e o horário da última entrada. Funcionalidades adicionais incluem filtragem em tempo real por tags e atualizações dinâmicas de conteúdo, proporcionando aos usuários uma visão abrangente de sua atividade de anotações. A arquitetura prioriza design modular de componentes, layout responsivo e experiência intuitiva, demonstrando a aplicação prática de práticas modernas de desenvolvimento front-end.",
+      "A Austin Moving Company é um site profissional desenvolvido para uma empresa de mudanças sediada no Texas. Construído do zero usando WordPress e blocos do Gutenberg, o site inclui páginas de áreas de serviço, layouts personalizados, um sistema de blog e estruturas de conteúdo dinâmicas projetadas para apoiar as estratégias de marketing e SEO.",
+      "O projeto envolveu colaboração direta com outro desenvolvedor e com o cliente para coletar requisitos, esclarecer as necessidades do cliente e garantir a entrega bem-sucedida do projeto. O resultado é um website escalável e fácil de usar que apresenta os serviços da empresa de forma eficaz, ao mesmo tempo que fornece uma base sólida para o crescimento futuro do conteúdo.",
     ],
-    projectLink: "https://gff-note-taking.vercel.app/",
-    codeLink: "https://github.com/GiovaneForlenza/Note-taking-app",
-    photo: noteflow,
+    projectLink: "https://austinmoving.company/",
+    photo: austinMovingCo,
   },
-
-  // Grocery List website
-  // Text is ready, gotta upload the images in the db and take the screenshots
-  // {
-  //   en_title: "Grocery List",
-  //   br_title: "Lista de compras",
-  //   tags: ["React", "Tailwind", "Supabase DB"],
-  //   en_description: [
-  //     "GroceryList is a React-based grocery management application developed to help users organize and track their shopping items in real time. Built with React, Supabase for cloud-based data persistence, and Tailwind CSS for styling, the application allows users to create, edit, delete, and mark items as purchased through an intuitive interface, while real-time database synchronization ensures seamless updates across all devices.",
-  //     "The project also includes a dedicated search bar and dynamic filtering system, allowing users to quickly locate items by name, category, or purchase status. Additional features include quantity management and automatic list sorting for improved organization. The architecture emphasizes real-time data flow, component reusability, and responsive design.",
-  //   ],
-  //   br_description: [
-  //     "GroceryList é uma aplicação de gerenciamento de compras desenvolvida com React, projetada para ajudar usuários a organizar e acompanhar seus itens de mercado em tempo real. Construída com React, Supabase para persistência de dados em nuvem e Tailwind CSS para estilização, a aplicação permite que usuários criem, editem, excluam e marquem itens como comprados por meio de uma interface intuitiva, enquanto a sincronização em tempo real com o banco de dados garante atualizações contínuas em todos os dispositivos.",
-  //     "O projeto também conta com uma barra de pesquisa e um sistema de filtros dinâmicos, permitindo que os usuários localizem rapidamente itens por nome, categoria ou status de compra. Funcionalidades adicionais incluem gerenciamento de quantidades e ordenação automática da lista para melhor organização. A arquitetura prioriza fluxo de dados em tempo real, reutilização de componentes e design responsivo.",
-  //   ],
-  //   projectLink: "https://gff-grocery-list.vercel.app/",
-  //   codeLink: "https://github.com/GiovaneForlenza/grocery-list",
-  //   photo: realters,
-  // },
 
   // Realters website
   {
@@ -81,6 +61,60 @@ export const PROJECTS = [
     photo: projectFeedback,
   },
 
+  // Note taking app
+  {
+    en_title: "NoteFlow",
+    br_title: "NoteFlow",
+    tags: ["React", "Tailwind", "Next.JS", "Local storage"],
+    en_description: [
+      "NoteFlow is a React-based note-taking application developed to help users capture, organize, and manage their thoughts with flexibility and efficiency. Built with React, Local Storage for client-side data persistence, and Tailwind for styling, the application allows users to create, read, update, and delete notes through a fully functional CRUD interface, while a rich text editor enables text formatting including bold, underline, and highlight for enhanced note expression.",
+      "The project also includes a custom tagging system for note categorization, a search bar for quick content discovery, and an informative stats header displaying total notes, tags in use, the most frequently used tag, and the timestamp of the last entry. Additional features include real-time filtering by tags and dynamic content updates, providing users with a comprehensive overview of their note-taking activity. The architecture emphasizes modular component design, responsive layout, and intuitive user experience, demonstrating practical application of modern front-end development practices.",
+    ],
+    br_description: [
+      "NoteFlow é uma aplicação de anotações desenvolvida com React, criada para ajudar usuários a capturar, organizar e gerenciar seus pensamentos com flexibilidade e eficiência. Construída com React, Local Storage para persistência de dados no lado do cliente e Tailwind para estilização, a aplicação permite que usuários criem, leiam, atualizem e excluam anotações por meio de uma interface CRUD totalmente funcional, enquanto um editor de texto possibilita formatação com negrito, sublinhado e grifar o texto para maior expressividade nas anotações.",
+      "O projeto também conta com um sistema de tags personalizadas para categorização das anotações, uma barra de pesquisa para pesquisa rápida de conteúdo e um cabeçalho informativo com estatísticas que exibe total de anotações, tags em uso, a tag mais utilizada e o horário da última entrada. Funcionalidades adicionais incluem filtragem em tempo real por tags e atualizações dinâmicas de conteúdo, proporcionando aos usuários uma visão abrangente de sua atividade de anotações. A arquitetura prioriza design modular de componentes, layout responsivo e experiência intuitiva, demonstrando a aplicação prática de práticas modernas de desenvolvimento front-end.",
+    ],
+    projectLink: "https://gff-note-taking.vercel.app/",
+    codeLink: "https://github.com/GiovaneForlenza/Note-taking-app",
+    photo: noteflow,
+  },
+
+  // Confraria do Investidor
+  {
+    en_title: "Confraria do Investidor",
+    br_title: "Confraria do Investidor",
+    tags: ["Wordpress", "Elementor", "Custom CSS"],
+    en_description: [
+      "This WordPress-based website was developed for a client hosting an investment lobby event featuring speakers, lectures, and educational sessions about investing. Built using Elementor, custom CSS, and custom components, the project focuses on delivering a clear, structured, and professional presentation of event information while maintaining a modern and responsive user experience.",
+      "The website emphasizes accessible content organization, allowing users to easily browse speaker profiles, event schedules, and session details. Custom styling and layout solutions were implemented to align with the client’s branding and enhance visual hierarchy across all sections of the site. The development process focused on flexibility and maintainability, ensuring the client could easily update event content as needed.",
+    ],
+    br_description: [
+      "Este site baseado em WordPress foi desenvolvido para um cliente que organiza um evento de lobby de investimentos com palestrantes, apresentações e sessões educativas sobre investimentos. Construído com Elementor, CSS personalizado e componentes personalizados, o projeto tem como foco apresentar as informações do evento de forma clara, estruturada e profissional, mantendo uma experiência de usuário moderna e responsiva.",
+      "O site prioriza a organização acessível do conteúdo, permitindo que os usuários naveguem facilmente pelos perfis dos palestrantes, pela programação dos eventos e pelos detalhes das sessões. Soluções personalizadas de estilo e layout foram implementadas para se alinharem à identidade visual do cliente e aprimorarem a hierarquia visual em todas as seções do site. O processo de desenvolvimento focou na flexibilidade e na facilidade de manutenção, garantindo que o cliente pudesse atualizar facilmente o conteúdo dos eventos conforme necessário.",
+    ],
+    projectLink: "https://confrariadoinvestidor.com.br/evento/braganca/",
+    photo: confrariaDoInvestidor,
+  },
+
+  // Grocery List website
+  // Text is ready, gotta upload the images in the db and take the screenshots
+  // {
+  //   en_title: "Grocery List",
+  //   br_title: "Lista de compras",
+  //   tags: ["React", "Tailwind", "Supabase DB"],
+  //   en_description: [
+  //     "GroceryList is a React-based grocery management application developed to help users organize and track their shopping items in real time. Built with React, Supabase for cloud-based data persistence, and Tailwind CSS for styling, the application allows users to create, edit, delete, and mark items as purchased through an intuitive interface, while real-time database synchronization ensures seamless updates across all devices.",
+  //     "The project also includes a dedicated search bar and dynamic filtering system, allowing users to quickly locate items by name, category, or purchase status. Additional features include quantity management and automatic list sorting for improved organization. The architecture emphasizes real-time data flow, component reusability, and responsive design.",
+  //   ],
+  //   br_description: [
+  //     "GroceryList é uma aplicação de gerenciamento de compras desenvolvida com React, projetada para ajudar usuários a organizar e acompanhar seus itens de mercado em tempo real. Construída com React, Supabase para persistência de dados em nuvem e Tailwind CSS para estilização, a aplicação permite que usuários criem, editem, excluam e marquem itens como comprados por meio de uma interface intuitiva, enquanto a sincronização em tempo real com o banco de dados garante atualizações contínuas em todos os dispositivos.",
+  //     "O projeto também conta com uma barra de pesquisa e um sistema de filtros dinâmicos, permitindo que os usuários localizem rapidamente itens por nome, categoria ou status de compra. Funcionalidades adicionais incluem gerenciamento de quantidades e ordenação automática da lista para melhor organização. A arquitetura prioriza fluxo de dados em tempo real, reutilização de componentes e design responsivo.",
+  //   ],
+  //   projectLink: "https://gff-grocery-list.vercel.app/",
+  //   codeLink: "https://github.com/GiovaneForlenza/grocery-list",
+  //   photo: realters,
+  // },
+
   // ShopHub Ecommerce
   {
     en_title: "ShopHub Ecommerce",
@@ -115,40 +149,6 @@ export const PROJECTS = [
     projectLink: "https://task-list-gff.netlify.app/",
     codeLink: "https://github.com/GiovaneForlenza/todo-list-react-2025",
     photo: taskList,
-  },
-
-  // Confraria do Investidor
-  {
-    en_title: "Confraria do Investidor",
-    br_title: "Confraria do Investidor",
-    tags: ["Wordpress", "Elementor", "Custom CSS"],
-    en_description: [
-      "This WordPress-based website was developed for a client hosting an investment lobby event featuring speakers, lectures, and educational sessions about investing. Built using Elementor, custom CSS, and custom components, the project focuses on delivering a clear, structured, and professional presentation of event information while maintaining a modern and responsive user experience.",
-      "The website emphasizes accessible content organization, allowing users to easily browse speaker profiles, event schedules, and session details. Custom styling and layout solutions were implemented to align with the client’s branding and enhance visual hierarchy across all sections of the site. The development process focused on flexibility and maintainability, ensuring the client could easily update event content as needed.",
-    ],
-    br_description: [
-      "Este site baseado em WordPress foi desenvolvido para um cliente que organiza um evento de lobby de investimentos com palestrantes, apresentações e sessões educativas sobre investimentos. Construído com Elementor, CSS personalizado e componentes personalizados, o projeto tem como foco apresentar as informações do evento de forma clara, estruturada e profissional, mantendo uma experiência de usuário moderna e responsiva.",
-      "O site prioriza a organização acessível do conteúdo, permitindo que os usuários naveguem facilmente pelos perfis dos palestrantes, pela programação dos eventos e pelos detalhes das sessões. Soluções personalizadas de estilo e layout foram implementadas para se alinharem à identidade visual do cliente e aprimorarem a hierarquia visual em todas as seções do site. O processo de desenvolvimento focou na flexibilidade e na facilidade de manutenção, garantindo que o cliente pudesse atualizar facilmente o conteúdo dos eventos conforme necessário.",
-    ],
-    projectLink: "https://confrariadoinvestidor.com.br/evento/braganca/",
-    photo: confrariaDoInvestidor,
-  },
-
-  // Austin Moving Co.
-  {
-    en_title: "Austin Moving Co.",
-    br_title: "Austin Moving Co.",
-    tags: ["Wordpress", "Gutenberg Blocks", "Custom CSS"],
-    en_description: [
-      "Austin Moving Company is a professional business website developed for a moving services company based in Texas. Built from scratch using WordPress and Gutenberg blocks, the website includes service area pages, custom layouts, a blog system, and dynamic content structures designed to support marketing and SEO efforts.",
-      "The project involved close collaboration with another developer and direct communication with the client to gather requirements, clarify business needs, and ensure successful project delivery. The result is a scalable and user-friendly website that effectively presents the company's services while providing a solid foundation for future content growth.",
-    ],
-    br_description: [
-      "A Austin Moving Company é um site profissional desenvolvido para uma empresa de mudanças sediada no Texas. Construído do zero usando WordPress e blocos do Gutenberg, o site inclui páginas de áreas de serviço, layouts personalizados, um sistema de blog e estruturas de conteúdo dinâmicas projetadas para apoiar as estratégias de marketing e SEO.",
-      "O projeto envolveu colaboração direta com outro desenvolvedor e com o cliente para coletar requisitos, esclarecer as necessidades do cliente e garantir a entrega bem-sucedida do projeto. O resultado é um website escalável e fácil de usar que apresenta os serviços da empresa de forma eficaz, ao mesmo tempo que fornece uma base sólida para o crescimento futuro do conteúdo.",
-    ],
-    projectLink: "https://austinmoving.company/",
-    photo: austinMovingCo,
   },
 
   // Recipe Menu
