@@ -1,81 +1,59 @@
-import { useState } from "react";
-import {
-  BR_SECTIONS,
-  ENGLISH_SECTIONS,
-  WEBSITE_LANGUAGES,
-  getTextFromScript,
-  getTitleFromScript,
-} from "../WebsiteTexts";
+import BrowserFrame from "../BrowserFrame";
+import SectionTitle from "../SectionTitle";
+import { getSection } from "../WebsiteTexts";
 import { PROJECTS } from "./PortfolioProjects";
 import ProjectDetails from "./ProjectDetails";
 
 import "../../scroll-animation.css";
 
 function Portfolio({ isWebsiteEnglish }) {
-  const [projects, setProjects] = useState(PROJECTS);
+  const { title, text } = getSection(isWebsiteEnglish, "portfolio");
 
   return (
-    <div
-      className="sm:py-30 flex w-full items-center  bg-bg-light  px-3 py-8 dark:bg-gradient-to-b   dark:from-bg-dark dark:to-secondary-dark sm:p-10"
-      name="portfolio"
-      id="portfolio"
-    >
-      <div className="mx-auto max-w-6xl">
-        <div className="scroll-animation">
-          <p className="inline border-b-4 border-b-accent-light text-4xl font-bold dark:border-b-accent-dark ">
-            {isWebsiteEnglish
-              ? getTitleFromScript(
-                  WEBSITE_LANGUAGES.ENGLISH,
-                  ENGLISH_SECTIONS.PORTFOLIO,
-                )
-              : getTitleFromScript(
-                  WEBSITE_LANGUAGES.PORTUGUESE,
-                  BR_SECTIONS.PORTFOLIO,
-                )}
-          </p>
-          <p className="my-8 text-xl ">
-            {isWebsiteEnglish
-              ? getTextFromScript(
-                  WEBSITE_LANGUAGES.ENGLISH,
-                  ENGLISH_SECTIONS.PORTFOLIO,
-                )
-              : getTextFromScript(
-                  WEBSITE_LANGUAGES.PORTUGUESE,
-                  BR_SECTIONS.PORTFOLIO,
-                )}
-          </p>
-        </div>
-        {projects.map((project, id) => {
-          return (
-            <section
-              className="scroll-animation my-10 rounded-md border border-gray-300 bg-white dark:border-none dark:bg-gray-900"
-              key={id}
-            >
-              <div
-                className={`mx-auto flex max-w-screen-xl flex-col px-4 py-6 shadow-sm  lg:flex-row  ${
-                  id % 2 === 0 && "lg:flex-row-reverse"
-                }`}
+    <section id="portfolio" className="bg-canvas py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <SectionTitle title={title} subtitle={text} />
+        <div className="space-y-8">
+          {PROJECTS.map((project, id) => {
+            const title = isWebsiteEnglish
+              ? project.en_title
+              : project.br_title;
+            return (
+              <article
+                className="scroll-animation rounded-2xl border border-line bg-white p-5 shadow-sm sm:p-8"
+                key={id}
               >
-                <div className="mt-4 lg:mt-0 lg:w-2/4">
-                  <a href={project.projectLink} target="_blank">
-                    <img
-                      className=" rounded-md"
-                      src={project.photo}
-                      alt="dashboard image"
-                    />
-                  </a>
+                <div
+                  className={`flex flex-col gap-8 lg:items-center lg:gap-12 ${
+                    id % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
+                  }`}
+                >
+                  <div className="lg:w-1/2">
+                    <a
+                      href={project.projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={title}
+                      className="block rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-600"
+                    >
+                      <BrowserFrame
+                        src={project.photo}
+                        alt={title}
+                        url={new URL(project.projectLink).host}
+                      />
+                    </a>
+                  </div>
+                  <ProjectDetails
+                    project={project}
+                    isWebsiteEnglish={isWebsiteEnglish}
+                  />
                 </div>
-                <ProjectDetails
-                  project={project}
-                  id={id + 10}
-                  isWebsiteEnglish={isWebsiteEnglish}
-                />
-              </div>
-            </section>
-          );
-        })}
+              </article>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

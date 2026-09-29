@@ -1,74 +1,52 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
-function ProjectDetails({ project, id, isWebsiteEnglish }) {
+import { getSection } from "../WebsiteTexts";
+
+function ProjectDetails({ project, isWebsiteEnglish }) {
+  const labels = getSection(isWebsiteEnglish, "projectButtons").text;
+  const description = isWebsiteEnglish
+    ? project.en_description
+    : project.br_description;
+
   return (
-    <div
-      className={`mt-4 flex grow-0 flex-col items-start justify-start lg:mt-0 lg:w-2/4 ${
-        id % 2 === 1 ? "lg:ml-5" : "lg:mr-5"
-      }`}
-    >
-      <div className="sm:mb-4">
-        <h2 className="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          {isWebsiteEnglish ? project.en_title : project.br_title}
-        </h2>
-        <div className="mb-2 flex flex-wrap">
-          {project.tags.map((tag, id) => {
-            return (
-              <div
-                className="m-1 rounded-full border-2 border-primary-light px-2 text-xs tracking-widest  dark:border-accent-dark dark:text-white"
-                key={id}
-              >
-                {tag}
-              </div>
-            );
-          })}
-        </div>
-        {isWebsiteEnglish
-          ? project.en_description.map((text, id) => {
-              return (
-                <p
-                  className="mb-2 font-light text-gray-500 dark:text-gray-400 md:text-lg"
-                  key={id}
-                >
-                  {text}
-                </p>
-              );
-            })
-          : project.br_description.map((text, id) => {
-              return (
-                <p
-                  className="mb-2 font-light text-gray-500 dark:text-gray-400 md:text-lg"
-                  key={id}
-                >
-                  {text}
-                </p>
-              );
-            })}
+    <div className="flex flex-col items-start lg:w-1/2">
+      <h3 className="text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+        {isWebsiteEnglish ? project.en_title : project.br_title}
+      </h3>
+      <ul className="mt-4 flex flex-wrap gap-2">
+        {project.tags.map((tag, id) => (
+          <li
+            key={id}
+            className="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 ring-1 ring-inset ring-brand-100"
+          >
+            {tag}
+          </li>
+        ))}
+      </ul>
+      <div className="mt-5 space-y-3 leading-relaxed">
+        {description.map((text, id) => (
+          <p key={id}>{text}</p>
+        ))}
       </div>
-      <div className="mt-4 flex w-full flex-col sm:mt-0 sm:flex-row">
-        {/* <a
-          href={project.projectLink}
-          target="_blank"
-          className="inline-flex items-center mb-4 xs:mb-0 mr-3  font-medium text-bg-light bg-primary-light hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-accent-dark dark:text-secondary-dark hover:-translate-y-0.5 duration-300"
-        >
-          Live demo
-        </a> */}
+      <div className="mt-6 flex flex-wrap gap-3">
         <a
-          className="button text-md mb-4 mr-4 flex cursor-pointer select-none items-center rounded-lg border-b-[1px] border-accent-light  bg-accent-light px-4 py-2 text-white transition-all duration-100 [box-shadow:0_5px_0_0_#321268] dark:border-blue-500 dark:bg-blue-600 dark:[box-shadow:0_5px_0_0_#1E40AF] sm:mb-0 lg:active:translate-y-1 lg:active:border-b-[0px] lg:active:[box-shadow:0_0px_0_0_#1E40AF,0_0px_0_0_#1b70f841]"
           href={project.projectLink}
           target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary"
         >
-          Live demo
-          <BiLinkExternal size={20} className="ml-3" />
+          {labels.demo}
+          <BiLinkExternal size={18} />
         </a>
         {project.codeLink && (
           <a
             href={project.codeLink}
             target="_blank"
-            className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 duration-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700 xs:mb-0"
+            rel="noopener noreferrer"
+            className="btn-secondary"
           >
-            {isWebsiteEnglish ? "Code" : "Código"}
-            <BsGithub size={20} className="ml-3" />
+            <BsGithub size={18} />
+            {labels.code}
           </a>
         )}
       </div>

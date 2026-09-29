@@ -1,57 +1,34 @@
-import { useEffect, useState } from "react";
-import "../scroll-animation.css";
-import {
-  BR_SECTIONS,
-  ENGLISH_SECTIONS,
-  WEBSITE_LANGUAGES,
-  getTextFromScript,
-  getTitleFromScript,
-} from "./WebsiteTexts";
+import SectionTitle from "./SectionTitle";
+import { getSection } from "./WebsiteTexts";
 
 function About({ isWebsiteEnglish }) {
-  const [arrayText, setArrayText] = useState([]);
-  useEffect(() => {
-    if (isWebsiteEnglish)
-      setArrayText(
-        getTextFromScript(WEBSITE_LANGUAGES.ENGLISH, ENGLISH_SECTIONS.ABOUT),
-      );
-    else
-      setArrayText(
-        getTextFromScript(WEBSITE_LANGUAGES.PORTUGUESE, BR_SECTIONS.SOBRE),
-      );
-  }, [isWebsiteEnglish]);
+  const { title, text } = getSection(isWebsiteEnglish, "about");
+  const facts = getSection(isWebsiteEnglish, "aboutFacts").text;
 
   return (
-    <div
-      className="flex items-center bg-bg-light px-3 dark:bg-gradient-to-t dark:from-bg-dark dark:to-secondary-dark sm:p-10 sm:py-20  md:h-screen md:w-full lg:pb-20 "
-      name="about"
-      id="about"
-    >
-      <div className="scroll-animation mx-auto max-w-4xl">
-        <div className="pb-10">
-          <p className="inline border-b-4 border-b-accent-light text-4xl font-bold text-text-light dark:border-b-accent-dark dark:text-text-dark">
-            {isWebsiteEnglish
-              ? getTitleFromScript(
-                  WEBSITE_LANGUAGES.ENGLISH,
-                  ENGLISH_SECTIONS.ABOUT,
-                )
-              : getTitleFromScript(
-                  WEBSITE_LANGUAGES.PORTUGUESE,
-                  BR_SECTIONS.SOBRE,
-                )}
-          </p>
-        </div>
-        <div className="">
-          {arrayText.map((text, id) => {
-            return (
-              <p className="mt-2 sm:text-xl" key={id}>
-                {text}
-              </p>
-            );
-          })}
+    <section id="about" className="bg-canvas py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <SectionTitle title={title} />
+        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
+          <div className="scroll-animation max-w-prose space-y-5 text-lg leading-relaxed">
+            {text.map((paragraph, id) => (
+              <p key={id}>{paragraph}</p>
+            ))}
+          </div>
+          <dl className="scroll-animation h-fit rounded-2xl border border-line bg-white p-6 shadow-sm">
+            {facts.map((fact, id) => (
+              <div
+                key={id}
+                className="border-line py-4 first:pt-0 last:pb-0 [&:not(:first-child)]:border-t"
+              >
+                <dt className="text-sm text-body">{fact.label}</dt>
+                <dd className="mt-0.5 font-semibold text-ink">{fact.value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

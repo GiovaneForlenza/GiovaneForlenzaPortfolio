@@ -1,15 +1,19 @@
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    .scroll-animation {
+      animation: appear linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
   }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
-.scroll-animation {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
 }
