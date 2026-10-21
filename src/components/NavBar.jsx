@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BiLinkExternal } from "react-icons/bi";
 import { FaBars, FaTimes, FaWhatsapp } from "react-icons/fa";
 import { getSection } from "./WebsiteTexts";
 
@@ -7,7 +8,7 @@ const SECTION_IDS = ["#home", "#about", "#skills", "#portfolio", "#contact"];
 function LanguageSwitch({ isWebsiteEnglish, setIsWebsiteEnglish }) {
   const options = [
     { label: "EN", value: true, name: "English" },
-    { label: "PT", value: false, name: "Português" },
+    { label: "BR", value: false, name: "Português" },
   ];
   return (
     <div
@@ -71,9 +72,15 @@ function NavBar({ isWebsiteEnglish, setIsWebsiteEnglish }) {
             isWebsiteEnglish={isWebsiteEnglish}
             setIsWebsiteEnglish={setIsWebsiteEnglish}
           />
-          <a href="https://wa.me/+5511969194352" className="btn-primary ml-3">
+          <a
+            href="https://wa.me/+5511969194352"
+            className="btn-primary ml-3"
+            target="__blank"
+          >
             <FaWhatsapp size={18} />
             {ctaLabel}
+
+            <BiLinkExternal size={16} />
           </a>
         </nav>
         <button

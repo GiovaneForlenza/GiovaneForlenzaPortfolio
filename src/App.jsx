@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 
 export default function App() {
-  const [isWebsiteEnglish, setIsWebsiteEnglish] = useState(true);
+  const [isWebsiteEnglish, setIsWebsiteEnglish] = useState(false);
 
   useEffect(() => {
     document.documentElement.lang = isWebsiteEnglish ? "en" : "pt-BR";

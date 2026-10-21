@@ -47,6 +47,7 @@ function ProjectDetails({ project, isWebsiteEnglish }) {
           >
             <BsGithub size={18} />
             {labels.code}
+            <BiLinkExternal size={18} />
           </a>
         )}
       </div>

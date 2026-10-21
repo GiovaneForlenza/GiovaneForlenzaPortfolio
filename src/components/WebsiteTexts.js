@@ -85,7 +85,7 @@ export const TEXT_ENGLISH = [
     title: "Contact",
     text: [
       "Have a project in mind?",
-      "I'm open to freelance front-end and React work. Send me a message on LinkedIn and let's talk about what you need.",
+      "I'm open to freelance front-end and React work. Send me a message and let's talk about how I can help you.",
     ],
   },
   {
@@ -161,7 +161,7 @@ export const TEXT_BR = [
     title: "Contato",
     text: [
       "Tem um projeto em mente?",
-      "Estou aberto a projetos freelance de front-end e React. Me chame no LinkedIn e vamos conversar sobre o que você precisa.",
+      "Estou aberto a projetos freelance de front-end e React. Vamos conversar sobre como eu posso te ajudar",
     ],
   },
   {
